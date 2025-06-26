@@ -1,0 +1,123 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+}
+
+.dig-header {
+    border: 1px solid transparent;
+    height: 5.2vw;
+    width: 100%;
+    background-color: #00317B;
+}
+
+ .head {
+    font-size: 1.35vw;
+    margin-left: 6.25vw;
+    margin-top: 1.04vw;
+    color: #212A3C;
+}
+
+.head span{
+   border-bottom: 4px solid #00317B;
+   padding-bottom: 10px;
+
+}
+
+.dig-first, .dig-second, .dig-third, .dig-four, .dig-five {
+    border: 1px solid transparent;
+    margin-left: 6.25vw;
+    margin-top: 1.04vw;
+}
+
+.dig-first, .dig-second {
+    width: 80%;
+    margin-top: 1.56vw;
+}
+
+.dig-first h1, .dig-second h1, .dig-third h1, .dig-four h1, .dig-five h1 {
+    font-size: 1.15vw;
+    color: #00317B;
+}
+
+.dig-first p, .dig-second p {
+    font-size: 0.89vw;
+    margin-top: 0.52vw;
+    line-height: 1.56vw;
+    color: #333232;
+}
+
+.dig-second p {
+    font-size: 0.86vw;
+}
+
+.dig-one {
+    line-height: 1.56vw;
+    margin-left: 3.65vw;
+    margin-top: 1.04vw;
+}
+
+.dig-two, .dig-three {
+    list-style: disc;
+    line-height: 1.56vw;
+}
+
+.dig-two {
+    margin-left: 1.56vw;
+}
+
+.dig-three {
+    margin-left: 3.65vw;
+    margin-top: 0.26vw;
+}
+
+.dig-heading {
+    margin-left: 6.25vw;
+    color: #00317B;
+    margin-top: 1.04vw;
+}
+
+.dig-parent {
+    border: 1px solid #F6F9FF;
+    width: 88%;
+    margin-left: 6.25vw;
+    margin-top: 1.04vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #C1DAFF, #F6F9FF);
+}
+
+.dig-child1 {
+    border: 1px solid transparent;
+    height: 13vw;
+    width: 15.6vw;
+    margin: 0.78vw 1.56vw;
+}
+
+.dig-child2 {
+    border: 1px solid transparent;
+    height: 19.8vw;
+    width: 31.25vw;
+    margin: 0.78vw 1.56vw;
+}
+
+.dig-child1 h1, .dig-child2 h1 {
+    font-size: 1.04vw;
+    color: #00317B;
+}
+/* 
+h4 {
+    margin-left: 2.08vw;
+    margin-top: 0.52vw;
+} */
+
+.dig-foot {
+    border: 1px solid black;
+    height: 7.8vw;
+    width: 100%;
+    background-color: #00317B;
+    margin-top: 1.04vw;
+}

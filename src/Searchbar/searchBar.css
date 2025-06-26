@@ -1,0 +1,59 @@
+
+/* --- Search Bar --- */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 25vw;
+}
+.search-container input[type="search"] {
+  width: 100%;
+  padding: 0.6vw 2vw 0.6vw 1vw;
+  font-size: 1rem;
+  border-radius: 2vw;
+  border: 1px solid rgba(218, 218, 218, 1);
+}
+.search-container::placeholder {
+  font-size: 0.9rem;
+  color: rgba(145, 145, 145, 1);
+}
+.search-container img {
+  position: absolute;
+  right: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1vw;
+  height: 1vw;
+}
+
+/* --- Checkbox Section --- */
+.checkbox {
+  display: flex;
+  gap: 0.5vw;
+  padding-bottom: 0.8vw;
+}
+.checkbox p {
+  font-size: 1rem;
+}
+
+/* --- Category Title --- */
+.category-title {
+  padding: 2vw 0 1.5vw;
+}
+.category-title p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+/* --- Layout Containers --- */
+.left-container {
+  width: 100%;
+}
+.right-container {
+  width: 100%;
+
+}
+
+/* For larger screens (side-by-side layout) */
+
+

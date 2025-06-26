@@ -1,0 +1,262 @@
+
+
+.register-container {
+  display: flex;
+}
+
+.register-div1 {
+  width: 60%;
+  padding: 40px;
+  background-color: white;
+}
+
+.register-div2 {
+  width: 40%;
+  background-color: #002366;
+  
+  padding: 30px 10px;
+ 
+}
+
+.register-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.register-part1 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.register-img1 {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.register-amount {
+  color: rgba(0, 23, 149, 1);
+  font-size: x-large;
+}
+
+.register-part2a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 30px;
+}
+
+.register-part2b {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #777;
+}
+
+.register-part2b span {
+  color: #ffa500;
+}
+
+.register-part2c {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.register-name3,
+.register-time {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.register-name3 {
+  color: rgba(0, 23, 149, 1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.register-name3 img{
+  width: 10px;
+}
+
+.register-txt {
+  text-decoration: underline;
+}
+
+.register-ills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.register-pill {
+  background-color: #eaf1ff;
+  color: #002366;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.register-time {
+  color: rgba(102, 115, 122, 1);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#category ,#course {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.input{
+    width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.register-input-group-verify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.register-input-group-verify input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+  outline: none;
+}
+
+.register-verify-link {
+  color: #00317b;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.register-form-check {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.register-form-check  {
+  gap: 10px;
+display: flex;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.register-form-check label {
+  font-weight: 400;
+}
+
+.register-form-check a {
+  color: #002366;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.register-form-check a:hover {
+  color: #001a4d;
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+  .register-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.register-btn-reg {
+  background-color: #002366;
+  color: white;
+}
+
+.register-btn-outline-secondary {
+  background-color: #ddd;
+}
+
+.register-img3 {
+  width: 90%;
+  margin: 40px 0;
+}
+
+
+.register-ratings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.register-rating1 {
+  color: black;
+  font-weight: 600;
+}
+
+.register-rating3 {
+  color: rgba(156, 156, 156, 1);
+}
+
+.register-rating2 {
+  color: rgba(255, 199, 0, 1);
+}
+
+
+.register-img4 {
+  bottom: 10px;
+  left: 20px;
+}
+
+@media (max-width: 768px) {
+  .register-div1,
+  .register-div2 {
+    width: 100%;
+  }
+
+  .register-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.register-term {
+  margin-top: 20px;
+}
+.register-df{
+  display: flex;
+  align-items: center;
+}
+.register-df img{
+ width: 8px;
+}

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.padding-container {
+    padding: 1vw 6.9vw; /* 27px = 1.4vw, 133px = 6.9vw */
+    display: flex;
+}
+
+.dfng img {
+    width: 10px;/* 11px = 0.57vw */
+}
+
+.header {
+    width: 100%;
+     top: 0;
+    height: 120px;
+    background-color: rgba(0, 49, 123, 1);
+    font-family: "lato", sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    padding: 1.3vw 2.6vw; /* 25px = 1.3vw, 50px = 2.6vw */
+    box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* 2px = 0.1vw, 4px = 0.2vw */
+}
+
+.dfng {
+    display: flex;
+    align-items: center;
+    gap: 0.26vw; /* 5px = 0.26vw */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 2.1vw; /* 40px = 2.1vw */
+}
+
+.courses-selected a{
+    border-bottom: 0.16vw solid white; 
+    padding-bottom: 10px;/* 3px = 0.16vw */
+    font-weight: 900;
+}
+
+.right-header a {
+    
+    font-size: 1.1vw; /* 21px = 1.1vw */
+    
+    font-family: "lato", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo img {
+    /* height: 7.6vw; */
+
+   object-fit: contain;
+    display: block;
+}
+.logo{
+    width: 12vw;
+}
+/* Hamburger icon styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+  position: absolute;
+  top: 132px; /* same as header height */
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 49, 123, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 40px;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .right-header {
+    display: none; /* hide desktop nav on small screens */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.courses-page{
+  overflow: auto;
+}
+
+/* Common style for links */
+.nav-link {
+  color: white;
+  font-size: 1.1vw;
+  font-family: "lato", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Style when the link is active (like the 'Courses' page) */
+.active-link {
+  border-bottom: 0.16vw solid white;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+/* Optional: mobile menu override */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 18px;
+  }
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: white;         /* ✅ Dropdown background is white */
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 999;
+  min-width: 180px;
+}
+
+.dropdown-item  {
+  padding: 10px 20px;
+  display: block;
+  color: black;                    /* ✅ Text color is black */
+  font-weight: 500;
+  text-decoration: none;
+ 
+}
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+}
+
+/* Heading */
+/* h3 {
+    margin-top: 1.04vw;
+    font-size: clamp(16px, 1.25vw, 24px);
+} */
+
+/* Underline Effect */
+/* span {
+    position: relative;
+    width: max-content;
+} */
+/* span::after {
+    content: '';
+    background-color: #00317B;
+    height: 0.15vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 1.8vw;
+} */
+.it-firs span{
+   border-bottom: 4px solid #00317B;
+   padding-bottom: 10px;
+
+}
+.it-firs {
+   
+    
+    margin-left: 6.25vw;
+   
+}
+
+/* First Section */
+.it-first {
+    border: 1px solid transparent;
+    width: 80%;
+    margin-left: 6.25vw;
+    margin-top: 1.56vw;
+}
+.it-first h1 {
+    font-size: 1.15vw;
+    color: #00317B;
+    line-height: 2.08vw;
+    font-weight: 600;
+}
+.it-first p {
+    color: #333232;
+    font-size: 0.89vw;
+    margin-top: 0.52vw;
+    line-height: 1.56vw;
+}
+
+/* Second Section */
+.it-second {
+    border: 1px solid transparent;
+    width: 30%;
+    margin-left: 6.25vw;
+    margin-top: 1.04vw;
+}
+.it-second h1 {
+    color: #00317B;
+    font-size: 1.2vw;
+}
+.it-list {
+    margin-left: 1.3vw;
+    font-size: 0.94vw;
+    line-height: 1.46vw;
+    margin-top: 1.04vw;
+}
+
+/* Parent Container */
+.it-parent {
+    border: 1px solid #F6F9FF;
+    width: 90%;
+    margin-left: 3.4vw;
+    margin-top: 1.04vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #C1DAFF, #F6F9FF);
+}
+
+/* Child Boxes */
+.it-child1, .it-child2 {
+    border: 1px solid transparent;
+  
+    width: 23.4vw;
+    margin: 1.56vw 0.78vw;
+}
+.it-child1 h1, .it-child2 h1, .it-child3 h1, .it-child4 h1, .it-last h1 {
+    color: #00317B;
+    font-size: 1.25vw;
+}
+.it-child1 h2, .it-child2 h2, .it-child3 h2, .it-child4 h2, .it-last h2 {
+    font-size: 0.89vw;
+    margin-top: 1.3vw;
+}
+
+/* Lists */
+.it-one {
+    margin-left: 1.3vw;
+    margin-top: 1.3vw;
+    line-height: 1.3vw;
+}
+.it-two {
+    margin-left: 2.6vw;
+    margin-top: 1.3vw;
+    line-height: 1.3vw;
+}
+
+/* Second Row */
+.it-parent2 {
+    border: 1px solid transparent;
+    width: 80%;
+    margin-left: 4.7vw;
+    margin-top: 1.04vw;
+    display: flex;
+    justify-content: space-between;
+}
+.it-child3 {
+    border: 1px solid transparent;
+    height: 17.2vw;
+    width: 20.8vw;
+}
+.it-child4 {
+    border: 1px solid transparent;
+    width: 15.6vw;
+}
+
+/* Last Section */
+.it-last {
+    border: 1px solid transparent;
+    width: 15.6vw;
+    margin-left: 4.7vw;
+    margin-top: 0.52vw;
+}
+
+/* Footer */
+.it-foot {
+    border: 1px solid black;
+    height: 10.4vw;
+    width: 100%;
+    background-color: #00317B;
+    margin-top: 0.52vw;
+}
