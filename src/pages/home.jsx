@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Home.css';
-
+import { NavLink, useLocation } from 'react-router-dom';
 import heroImg from '../assets/2b3385cded9b07c99fab8b38d0a637871d1397ee.png';
 import edutechImg from '../assets/Screenshot 2025-06-14 172337.png';
 import itImg from '../assets/Screenshot 2025-06-14 172407.png';
@@ -60,7 +60,7 @@ function HomepageContent() {
           </p>
           <div className="home-btn">
             <button>Explore Courses</button>
-            <button>Register</button>
+             <button>Explore Interships</button>
           </div>
         </div>
         <div className="home-sec-part2">

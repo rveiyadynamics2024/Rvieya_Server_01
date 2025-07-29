@@ -10,7 +10,7 @@ const BlogDetail = () => {
                         <p>🚀 Join Our Exclusive Online Course Webinar!</p>
                     </div>
                     <div className="bgdetail-desc">
-                        <p>
+                        <p className='' >
                             Boost Your Career with Our Exclusive Webinar Register Now! Are you looking to super charge
                             your career and stand out in the competitive job market? Don’t miss our upcoming free
                             webinar on Career Guidance & Full Stacks Web Development. This is your chance to learn from

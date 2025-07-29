@@ -78,6 +78,10 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
+.right-header a:hover {
+  border-bottom: 3px solid ;
+  padding-bottom: 7px;
+}
 
 .logo img {
     /* height: 7.6vw; */
