@@ -17,6 +17,7 @@ import Services from './pages/Services'; // ✅ New single dynamic service page
 import PaymentOptions from './pages/PaymentOptions';
 import CourseView1 from './courseView1';
 import CourseView2 from './courseView2';
+import BlogDetail from './pages/BlogDetail';
 
 
 
@@ -43,6 +44,7 @@ function App() {
             <Route path="/lms-login" element={<LMSLogin />} />
             <Route path="/register" element={<Register />} />
             <Route path="/payment" element={<PaymentOptions />} />
+            <Route path="/blogdetail" element={<BlogDetail />} />
 
             {/* Dynamic Services Page */}
             <Route path="/services/:type" element={<Services />} />

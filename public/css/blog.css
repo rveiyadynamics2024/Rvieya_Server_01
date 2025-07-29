@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.back-img{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/blog.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;  /* horizontally center */
+    align-items: center;
+}
+.back-img p {
+    color: white;         /* or any contrasting color */
+    font-size: 100px;      /* adjust as needed */
+    font-weight: 700; /* bold text */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* improves readability over image */
+}
+.padding{
+    padding:  16px 103px;
+
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.cards{
+   display: flex;
+   justify-content: space-between;
+   border: 2px solid rgba(127, 174, 244, 1);
+   padding: 50px;
+   border-radius: 22px;
+   gap: 30px;
+  
+
+}
+.cards img{
+     width: 510px;
+   height: 300px;
+  
+    border-radius: 10px;
+}
+.title{
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 10px;
+
+
+
+}
+.description{
+    font-weight: 400;
+    font-size: 20px;
+color: rgba(0, 0, 0, 1);
+line-height: 30px;
+}
+.date{
+    color: rgba(108, 108, 108, 1);
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+
+

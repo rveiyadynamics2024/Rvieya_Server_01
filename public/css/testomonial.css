@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+body{
+    
+   
+}
+.testimonial p{
+    font-size: 38px;
+    font-weight: 700;
+
+   
+
+}
+.image-container{
+    display: flex;
+    justify-content: space-between;
+ 
+   
+   
+}
+.underline{
+    border-bottom:   4px solid rgba(0, 49, 123, 1);
+
+    
+}
+.border{
+     border: 1px solid rgba(127, 174, 244, 1);
+     border-radius: 34px;
+     padding: 20px;
+     margin-top: 10px;
+}
+.padding{
+    padding:  15px 100px;
+}
+.text{
+    width: 1200px;
+    padding: 10px;
+}
+.text1 p{
+    font-weight: 400;
+    font-size: 21px;
+}
+.text2{
+padding-top: 10px;
+color: rgba(108, 108, 108, 1);
+font-weight: 500;
+font-size: 20px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.form-title{
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.padding-form{
+    padding: 20px 30px;
+}
+.form-conatiner{
+   width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.28);
+}
+.name , .Feedback{
+    padding-top: 20px;
+}
+.form-conatiner input[type="text"], textarea{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    
+    border: 1px solid rgba(202, 202, 202, 1)
+}
+.Submit button{
+    width: 100%;
+     background-color: rgba(0, 49, 123, 1);
+     border: 1px solid rgba(16, 94, 111, 1);
+     color: white;
+        padding: 10px;
+         font-weight: 700;
+    font-weight: 25px;
+}
+.Name,.Feedback-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.Submit{
+    padding-top: 10px;
+   
+}
