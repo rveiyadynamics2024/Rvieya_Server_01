@@ -20,12 +20,38 @@ import p3 from '../assets/dbd1bf0581113f85b43de05ea96db048ecea67bf.png';
 import p4 from '../assets/54ee2aacecc03823d3b0706347e55eba604970d3.png';
 import p5 from '../assets/9edb8055ca0d2f7cb4fa352d15b92abde984c741.png';
 import p6 from '../assets/dd008b27362ee25e8cdf434eba5ac5967765e5ab.png';
+import { useEffect, useRef } from 'react';
 
 function HomepageContent() {
+  // Import useEffect and useRef for scroll animations
+
+  // Custom hook for fade-in animation on scroll
+  function useScrollFadeIn(delay = 0) {
+    const ref = useRef();
+    useEffect(() => {
+      const node = ref.current;
+      if (!node) return;
+      node.style.opacity = 0;
+      node.style.transform = 'translateY(40px)';
+      node.style.transition = `opacity 0.7s ${delay}s, transform 0.7s ${delay}s`;
+      const onScroll = () => {
+        const rect = node.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          node.style.opacity = 1;
+          node.style.transform = 'translateY(0)';
+        }
+      };
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+      return () => window.removeEventListener('scroll', onScroll);
+    }, [delay]);
+    return ref;
+  }
+
   return (
     <>
-      <div className="home-section1">
-        <div className="home-sec-part1">
+      <div className="home-section1" ref={useScrollFadeIn(0)}>
+        <div className="home-sec-part1   ">
           <h1>Empowering Students Through<br />Innovative Learning</h1>
           <p>
             At <strong>"RVEIYA DYNAMICS"</strong>, we specialize in providing industry-relevant<br />
@@ -42,7 +68,7 @@ function HomepageContent() {
         </div>
       </div>
 
-      <div className="home-section2">
+      <div className="home-section2" ref={useScrollFadeIn(0.2)}>
         {[{
           img: edutechImg, title: 'Edutech',
           text: 'Innovating the Future of Learning. At EdTech, we are committed to revolutionizing education through cutting-edge technology.'
@@ -53,7 +79,7 @@ function HomepageContent() {
           img: marketingImg, title: 'Digital Marketing',
           text: 'Boost your brand\'s online presence with powerful strategies and digital campaigns.'
         }].map((item, i) => (
-          <div className="home-box" key={i}>
+          <div className="home-box" key={i} ref={useScrollFadeIn(0.3 + i * 0.15)}>
             <img className="home-boximg" src={item.img} alt={item.title} />
             <div className="home-content">
               <div className="home-headline">{item.title}</div>
@@ -63,10 +89,10 @@ function HomepageContent() {
         ))}
       </div>
 
-      <div className="home-section3">
+      <div className="home-section3" ref={useScrollFadeIn(0.5)}>
         <h3 className="home-who-heading">Who We Are</h3>
         <p className="home-who-desc">
-                                                         RVEIYA DYNAMICS PVT LTD is a Skill Development and EdTech company, established on 21st November 2024, and approved by Startup India and MSME. We specialize in providing affordable, flexible, and industry-relevant educational solutions through live online classes, internships, mentorship programs, and project based learning for students in BTech, MTech, BBA, BCA, and general degree programs. Our offerings include both software courses such as C-Language, Python, Full Stack Development, Machine Learning, and hardware courses like Embedded Systems and VLSI, all tailored to bridge the gap between academic education and real-world industry demands. With a mission to make high-quality education accessible, we focus on practical learning and job readiness, equipping students with the skills they need to succeed in today’s competitive job market.
+          RVEIYA DYNAMICS PVT LTD is a Skill Development and EdTech company, established on 21st November 2024, and approved by Startup India and MSME. We specialize in providing affordable, flexible, and industry-relevant educational solutions through live online classes, internships, mentorship programs, and project based learning for students in BTech, MTech, BBA, BCA, and general degree programs. Our offerings include both software courses such as C-Language, Python, Full Stack Development, Machine Learning, and hardware courses like Embedded Systems and VLSI, all tailored to bridge the gap between academic education and real-world industry demands. With a mission to make high-quality education accessible, we focus on practical learning and job readiness, equipping students with the skills they need to succeed in today’s competitive job market.
         </p>
 
         <h4 className="home-service-heading home-color">We are offering the below services:</h4>
@@ -88,7 +114,7 @@ function HomepageContent() {
         </ul>
       </div>
 
-      <div className="home-section4">
+      <div className="home-section4" ref={useScrollFadeIn(0.7)}>
         <div className="home-heading-row">
           <h3>Courses We Offer</h3>
           <a href="#" className="home-view-all">View All Courses</a>
@@ -108,7 +134,7 @@ function HomepageContent() {
             title: "Web Development Fullstack",
             price: "₹119"
           }].map((course, index) => (
-            <div className="home-card" key={index}>
+            <div className="home-card" key={index} ref={useScrollFadeIn(0.8 + index * 0.15)}>
               <img src={course.img} alt={course.title} />
               <div className="home-card-body">
                 <h4 className="home-color">{course.title}</h4>
@@ -146,7 +172,7 @@ function HomepageContent() {
             title: "Content Writing",
             price: "₹119"
           }].map((internship, index) => (
-            <div className="home-card" key={index}>
+            <div className="home-card" key={index} ref={useScrollFadeIn(1.2 + index * 0.15)}>
               <img src={internship.img} alt={internship.title} />
               <div className="home-card-body">
                 <h4 className="home-color">{internship.title}</h4>
@@ -165,7 +191,7 @@ function HomepageContent() {
           ))}
         </div>
 
-        <div className="home-promoters-row">
+        <div className="home-promoters-row" ref={useScrollFadeIn(1.2)}>
           {[p1, p2, p3, p4, p5, p6].map((img, i) => (
             <img key={i} src={img} alt={`partner-${i}`} />
           ))}
