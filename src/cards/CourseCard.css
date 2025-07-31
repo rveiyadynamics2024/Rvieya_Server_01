@@ -1,0 +1,165 @@
+/* CourseCard.css */
+.course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 1.56vw; /* ~30px at 1920px */
+  padding: 0.83vw;       /* ~16px */
+  background-color: #fff;
+  box-shadow: 0px 0px 0.42vw rgba(0, 0, 0, 0.08); /* ~8px */
+  flex-wrap: wrap;
+}
+
+.course-image-wrapper {
+  width: 10.42vw; /* ~200px */
+  flex-shrink: 0;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 0.42vw; /* ~8px */
+  object-fit: cover;
+}
+
+.course-info {
+  padding-left: 1.04vw; /* ~20px */
+  flex: 1;
+  min-width: 40%;
+}
+
+.course-title {
+  font-size: 0.94vw; /* ~18px */
+  font-weight: 600;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.73vw; /* ~14px */
+  margin: 0.31vw 0;
+  color: #ffa000;
+  justify-content: space-between;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  color: #ffa000;
+}
+
+.course-rating .icon {
+  width: 0.83vw; /* ~16px */
+  height: 0.83vw;
+  margin-right: 0.26vw; /* ~5px */
+}
+
+.review-count {
+  color: #888;
+  margin-left: 0.31vw;
+}
+
+.course-meta {
+  display: flex;
+  gap: 0.52vw; /* ~10px */
+  font-size: 0.73vw;
+  color: #333;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.52vw;
+}
+
+.course-meta img {
+  width: 0.73vw;
+  height: 0.73vw;
+  margin-right: 0.21vw;
+  vertical-align: middle;
+}
+
+.course-tag {
+  background-color: rgba(218, 233, 255, 1);
+  padding: 0.26vw;
+  border-radius: 0.73vw;
+}
+
+.course-tag p {
+  font-weight: 500;
+  font-size: 0.63vw;
+  color: rgba(0, 49, 123, 1);
+}
+
+.course-category {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 49, 123, 1);
+  font-weight: 500;
+}
+
+.course-duration {
+  display: flex;
+  align-items: center;
+  color: rgba(102, 115, 122, 1);
+  font-weight: 500;
+}
+
+.course-action {
+  text-align: right;
+  min-width: 20%;
+}
+
+.course-price {
+  font-size: 0.94vw;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 0.42vw;
+}
+
+.register-button{
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.42vw 0.78vw;
+  border-radius: 1.04vw;
+  font-size: 0.73vw;
+  cursor: pointer;
+  margin-right: 0.42vw;
+}
+
+.after-button-icon {
+  width: 0.83vw;
+  height: 0.83vw;
+  vertical-align: middle;
+}
+
+.course-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.6vw; /* ~50px */
+  flex-wrap: wrap;
+}
+
+/* 📱 Responsive (mobile-first) tweaks */
+@media (max-width: 768px) {
+  .course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-info {
+    padding-left: 0;
+    margin-top: 1vw;
+  }
+
+  .course-description {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+  }
+
+  .course-action {
+    width: 100%;
+    text-align: left;
+    margin-top: 1vw;
+  }
+}

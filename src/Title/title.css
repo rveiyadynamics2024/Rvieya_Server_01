@@ -1,0 +1,13 @@
+/* --- Title Section --- */
+.title {
+  padding: 1vw 6.8vw;
+}
+.title p {
+  font-size: 2vw;
+  font-weight: 700;
+  color: rgba(33, 42, 60, 1);
+}
+.title span {
+  border-bottom: 0.2vw solid rgba(33, 42, 60, 1);
+  padding-bottom: 0.3vw;
+}

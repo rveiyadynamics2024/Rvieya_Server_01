@@ -1,0 +1,23 @@
+.right-container {
+  width: 60%;
+}
+
+.course-container {
+  border: 0.05vw solid black; /* 1px */
+}
+
+.title-container1 {
+  padding-bottom: 0.52vw; /* 10px */
+}
+
+.title-container1 p {
+  font-size: 1.04rem; /* 20px → using rem for better font scaling */
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.04vw; /* 20px */
+}
