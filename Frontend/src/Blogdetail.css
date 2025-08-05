@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bgdetail-image-container {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/blog.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgdetail-description-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bgdetail-desc {
+    width: 1000px;
+    height: 90px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.bgdetail-back-img {
+    text-align: center;
+    justify-content: center;
+}
+
+.bgdetail-reg-btn {
+    padding-top: 10px;
+}
+
+.bgdetail-reg-btn button {
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 15px;
+    background: #181818;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.bgdetail-image {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.bgdetail-image img {
+    width: 864px;
+    height: 600px;
+}
+
+.bgdetail-intro {
+    padding: 15px 90px;
+}
+
+.bgdetail-intro-text p {
+    color: #181818;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.bgdetail-company-name {
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(0, 49, 123, 1);
+    padding: 10px 0;
+}
+
+.bgdetail-intro-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.bgdetail-learn,
+.bgdetail-speakers,
+.bgdetail-Event-detail,
+.bgdetail-attend {
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(0, 49, 123, 1);
+    padding: 10px 0;
+}
+
+.bgdetail-learn-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.bgdetail-learn-list li {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bgdetail-register {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgdetail-reg-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgdetail-reg-btns button {
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 35px;
+    background: rgba(0, 49, 123, 1);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.bgdetail-learn-text {
+    padding-bottom: 10px;
+}

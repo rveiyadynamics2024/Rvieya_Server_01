@@ -1,0 +1,126 @@
+/* --- Title Section --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ .main-container {
+  height: 100vh;
+ }
+
+
+.title {
+  padding: 1vw 6.8vw; /* 130px = ~6.8vw for 1920px */
+}
+.title p {
+  font-size: 2vw;
+  font-weight: 700;
+  color: rgba(33, 42, 60, 1);
+}
+.title span {
+  border-bottom: 0.2vw solid rgba(33, 42, 60, 1);
+  padding-bottom: 0.3vw;
+}
+
+/* --- Search Bar --- */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 25vw;
+}
+.search-container input[type="search"] {
+  width: 100%;
+  padding: 0.6vw 2vw 0.6vw 1vw;
+  font-size: 1rem;
+  border-radius: 2vw;
+  border: 1px solid rgba(218, 218, 218, 1);
+}
+.search-container::placeholder {
+  font-size: 0.9rem;
+  color: rgba(145, 145, 145, 1);
+}
+.search-container img {
+  position: absolute;
+  right: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1vw;
+  height: 1vw;
+}
+
+/* --- Checkbox Section --- */
+.checkbox {
+  display: flex;
+  gap: 0.5vw;
+  padding-bottom: 0.8vw;
+}
+.checkbox p {
+  font-size: 1rem;
+}
+
+/* --- Category Title --- */
+.category-title {
+  padding: 2vw 0 1.5vw;
+}
+.category-title p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+/* --- Layout Containers --- */
+
+
+
+/* For larger screens (side-by-side layout) */
+@media screen and (min-width: 768px) {
+  .left-container {
+    width: 40%;
+  }
+  .right-container {
+    width: 60%;
+  }
+
+  .padding-container {
+    display: flex;
+    padding: 2vw 6.8vw;
+    gap: 3vw;
+
+  }
+}
+
+/* --- Cards & Elements --- */
+.course-container,
+.course-cards {
+  border: 1px solid black;
+  padding: 2vw;
+}
+.python img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 1.5vw;
+}
+.star {
+  width: 1vw;
+}
+.df, .dfs, .dfsb, .image {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-between;
+}
+.width100 {
+  width: 100%;
+}
+
+/* --- Title Inside Right Container --- */
+.title-container1 {
+  width: 100%;
+}
+.title-contianer1 p {
+  font-size: 1.8vw;
+  font-weight: 800;
+}
+.duration-section{
+  padding-bottom: 10px;
+}

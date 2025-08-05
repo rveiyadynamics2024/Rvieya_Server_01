@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.blog-container {
+    width: 100%;
+}
+
+.blog-back-img {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/blog.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-back-img p {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.blog-padding {
+    padding: 16px 103px;
+}
+
+.blog-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(127, 174, 244, 1);
+    padding: 50px;
+    border-radius: 22px;
+    gap: 30px;
+}
+
+.blog-cards img {
+    width: 510px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.blog-title {
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.blog-description {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 30px;
+}
+
+.blog-date {
+    color: rgba(108, 108, 108, 1);
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px;
+}
