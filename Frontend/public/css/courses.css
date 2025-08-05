@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+
+
+
+
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 49, 123, 1);
+    font-family: "lato", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-header p {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: "lato", sans-serif;
+}
+
+.logo img {
+    height: 60px;
+    width: 70px;
+
+}
+
+.title p {
+    font-size: 38px;
+    font-weight: 700;
+    color: rgba(33, 42, 60, 1);
+    ;
+
+
+
+
+
+}
+
+.title {
+    padding: 13px 130px;
+}
+
+.title span {
+    border-bottom: 3px solid rgba(33, 42, 60, 1);
+    padding-bottom: 5px;/
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+
+    /* Optional: adjust width */
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    padding: 8px 30px 8px 10px;
+    /* right padding for icon space */
+    font-size: 16px;
+    border-radius: 39px;
+    border: 1px solid rgba(218, 218, 218, 1);
+}
+
+.search-container ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(145, 145, 145, 1);
+    padding: 0 10px;
+
+
+}
+
+.search-container img {
+    position: absolute;
+    right: 10px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    pointer-events: none;
+    /* so clicking doesn't click the image */
+}
+
+.checkbox {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.category-title {
+    padding-bottom: 22px;
+    padding-top: 30px;
+}
+
+.category-title p {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "lato", sans-serif;
+
+}
+
+.checkbox p {
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+.left-container {
+    width: 40%;
+
+}
+
+.right-container {
+    width: 60%;
+}
+
+.course-container {
+    border: 1px solid black;
+
+
+}
+
+.python img {
+    width: 200px;
+    border-radius: 25px;
+
+}
+
+.dfs {
+    display: flex;
+    gap: 20px;
+}
+
+.title-contianer1 p {
+    font-size: 30px;
+    font-family: 800;
+}
+
+.title-container1 {
+
+    width: 100%;
+}
+
+.star {
+    width: 14px;
+
+
+}
+
+.course-cards {
+    border: 1px solid black;
+    padding: 30px 30px;
+}
+
+.df {
+    display: flex;
+    gap: 20px;
+}
+
+.dfs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.width100 {
+    width: 100%;
+}
+
+.dfsb {
+    display: flex;
+    justify-content: space-between;
+}
