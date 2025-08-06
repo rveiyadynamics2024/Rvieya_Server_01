@@ -108,13 +108,20 @@
 .register-time {
   color: rgba(102, 115, 122, 1);
 }
-
-label {
+.register-label {
   display: block;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
 }
+
+
+/* label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+} */
 
 #category ,#course {
   width: 100%;

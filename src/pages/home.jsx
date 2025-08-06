@@ -13,6 +13,7 @@ import webCourse from '../assets/f63a51c02ca45faed99f4292225b201591f6a296.png';
 import socialMediaImg from '../assets/18c7415f258bf7fe2313481c5bbd4ea6841e06d6.png';
 import digitalMarketingImg from '../assets/f8b73ada831a8f7f0427b2414aa1ebd6d534c144.png';
 import contentWritingImg from '../assets/88f338eca8ec5274eb370ae0d6e16d12fd036115.png';
+import timerIcon from '../assets/timer.png';
 
 import p1 from '../assets/a4e4a90609a5894ee3e5a5e074379bf52e3dfd0f.png';
 import p2 from '../assets/fdfa21ff3e734ac4591169d45eeae7c42d1976f1.png';
@@ -34,7 +35,7 @@ function HomepageContent() {
           </p>
           <div className="home-btn">
             <button>Explore Courses</button>
-            <button>Register</button>
+            <button>Explore Internships</button>
           </div>
         </div>
         <div className="home-sec-part2">
@@ -118,7 +119,10 @@ function HomepageContent() {
                   <p className="home-rating3">(1,235)</p>
                 </div>
                 <div className="home-time_money">
-                  <p className="home-duration"><i className="fa-regular fa-clock"></i> &nbsp; 3 Months</p>
+                  <p className="home-duration">
+                    <img src={timerIcon} alt="duration" />
+                    3 Months
+                  </p>
                   <p className="home-price">{course.price}</p>
                 </div>
                 <div class="reg-btns">
@@ -160,7 +164,11 @@ function HomepageContent() {
                   <p className="home-rating3">(1,235)</p>
                 </div>
                 <div className="home-time_money">
-                  <p className="home-duration"><i className="fa-regular fa-clock"></i> &nbsp; 3 Months</p>
+                  <p className="home-duration">
+                    <img src={timerIcon} alt="duration" />
+                    3 Months
+                  </p>
+
                   <p className="home-price">{internship.price}</p>
                 </div>
                 <div class="reg-btns">
@@ -170,7 +178,11 @@ function HomepageContent() {
             </div>
           ))}
         </div>
+        <div className='home-headline'>
+          <h3><span>Testim</span>onials</h3>
+        </div>
         <div className="home-container">
+
           <div className="home-testheader">
             <div className="home-testheader-left">
               <div className="home-df">
@@ -178,8 +190,8 @@ function HomepageContent() {
                   <img src="../public/images/inverted.png" alt="" />
                 </div>
                 <div className='home-testheader-text'>
-                  <img src="../public/images/Ellipse 103.png" alt="" className="home-circle big" />
-                  <img src="../public/images/Ellipse 102.png" alt="" className="home-circle small" />
+                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
+
                 </div>
 
               </div>
@@ -192,15 +204,15 @@ function HomepageContent() {
               </p>
             </div>
           </div>
-            <div className="home-testheader">
+          <div className="home-testheader">
             <div className="home-testheader-left">
               <div className="home-df">
                 <div className="home-testheader-img">
                   <img src="../public/images/inverted.png" alt="" />
                 </div>
                 <div className='home-testheader-text'>
-                  <img src="../public/images/Ellipse 103.png" alt="" className="home-circle big" />
-                  <img src="../public/images/Ellipse 102.png" alt="" className="home-circle small" />
+                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
+
                 </div>
 
               </div>
@@ -213,15 +225,15 @@ function HomepageContent() {
               </p>
             </div>
           </div>
-           <div className="home-testheader">
+          <div className="home-testheader">
             <div className="home-testheader-left">
               <div className="home-df">
                 <div className="home-testheader-img">
                   <img src="../public/images/inverted.png" alt="" />
                 </div>
                 <div className='home-testheader-text'>
-                  <img src="../public/images/Ellipse 103.png" alt="" className="home-circle big" />
-                  <img src="../public/images/Ellipse 102.png" alt="" className="home-circle small" />
+                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
+
                 </div>
 
               </div>

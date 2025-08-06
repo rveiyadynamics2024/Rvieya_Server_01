@@ -10,8 +10,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .testomonial-header{
+  display: flex;
+  justify-content: space-between;
     padding-bottom: 40px ;
+    align-items: center;
     padding-top: 30px;
+}
+.testomonial-feedback button{
+  padding: 10px 17px;
+  border-radius: 8px;
+  background-color: rgba(0, 49, 123, 1);
+  color: white;
+  font-weight: 600;
+  font-size: 16px ;
 }
 /* === Testimonial Title === */
 .testomonial-header p {
@@ -23,11 +34,12 @@ body {
 /* === Underline for Heading === */
 .testomonial-underline {
   border-bottom: 4px solid rgba(0, 49, 123, 1);
+  padding-bottom: 10px;
 }
 
 /* === Layout Padding === */
 .testomonial-padding {
-  padding: 15px 100px;
+  padding: 15px 90px;
 }
 
 /* === Testimonial Cards === */
@@ -51,7 +63,7 @@ body {
 /* === Testimonial Text === */
 .testomonial-text {
   width: 1200px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .testomonial-text1 p {

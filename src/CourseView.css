@@ -103,10 +103,16 @@ img {
     color: #9C9C9C;
     font-size: 1rem;
 }
+.time{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 
 .location-time {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -295,7 +301,7 @@ img {
 
 .course-item-title p {
     color: #00317B;
-    font-size: 1.05rem;
+   
     margin-bottom: 5px;
 }
 

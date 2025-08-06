@@ -1,0 +1,152 @@
+/* Reset & Utility */
+
+
+img {
+  display: block;
+}
+
+.df {
+  display: flex;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+.imgg{
+    color: #00317B;
+    font-weight: 500;
+}
+
+/* Google icon fix */
+
+/* Layout Containers */
+
+
+.setting-container {
+  padding: 53px 95px;
+}
+
+
+
+/* Tabs Navigation */
+.setting-tab-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 97px;
+  border-bottom: 1px solid #A7A7A7;
+  margin-bottom: 32px;
+}
+
+.setting-tab {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.setting-tab.active-tab {
+  border-bottom: 5px solid #00317B;
+  color: #00317B ;
+  font-weight: 500;
+}
+
+/* Section Header */
+.setting-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32.5px 0;
+}
+.setting-section-header p {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.setting-add-button {
+  background-color: #00317B;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Blog Cards List */
+.setting-blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Blog Card */
+.setting-blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px;
+  box-shadow: 0 0 8px 0 #0000003B;
+  border-radius: 10px;
+}
+
+/* Blog Card Sections */
+.setting-blog-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+
+;
+}
+.ash{
+      color:  rgba(92, 92, 92, 1);
+}
+
+.setting-blog-title img{
+    width: 25px;
+    height: 25px;
+}
+.setting-blog-image {
+  width: 20%;
+  padding-left: 50px;
+  border-left: 2px dashed #9B9B9B;
+  border-right: 2px dashed #9B9B9B;
+}
+
+.setting-blog-modified {
+  width: 30%;
+  padding-left: 50px;
+  border-right: 2px dashed #9B9B9B;
+}
+
+.setting-blog-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 20%;
+}
+
+/* Action Buttons */
+.setting-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #00317B;
+  border-radius: 31px;
+  padding: 5px 10px;
+  color: #00317B;
+  background-color: transparent;
+  cursor: pointer;
+}

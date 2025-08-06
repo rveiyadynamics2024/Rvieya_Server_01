@@ -12,12 +12,19 @@ import Courses from './pages/courses';
 import Internships from './pages/Internships';
 import Blog from './pages/Blog';
 import Testimonials from './pages/Testimonials';
-import LMSLogin from './pages/LMSLogin';
+import LMSLogin from './pages/Settingpage';
 import Services from './pages/Services'; // ✅ New single dynamic service page
 import PaymentOptions from './pages/PaymentOptions';
 import CourseView1 from './courseView1';
 import CourseView2 from './courseView2';
 import BlogDetail from './pages/BlogDetail';
+import SettingPage from './pages/Settingpage';
+
+import FeedbackPage from './pages/feedback'; // ✅ New feedback page
+// ✅ New feedback form page
+
+// ✅ Make sure path is correct
+
 
 
 
@@ -52,6 +59,10 @@ function App() {
             {/* Dynamic course detail view */}
             <Route path="/courseview/:id" element={<CourseView1 />} />
             <Route path="/courseview/2" element={<CourseView2 />} />
+            <Route path="/settings" element={<SettingPage />} />
+            <Route path="/feedback" element={<FeedbackPage />} />
+
+
           </Routes>
 
           <div style={{ paddingTop: '20px' }}>

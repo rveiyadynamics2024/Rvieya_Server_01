@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -24,7 +24,7 @@ html, body {
   padding: 3.65vw 2.6vw;
 }
 
-.df {
+.footer-df {
   display: flex;
   gap: 0.52vw;
   padding-bottom: 0.52vw;
@@ -32,25 +32,25 @@ html, body {
   flex-wrap: wrap;
 }
 
-.dfx {
+.footer-dfx {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.logoimg img {
+.footer-logoimg img {
   width: clamp(80px, 13.37vw, 130px);
 }
 
-.logo-title p {
+.footer-logo-title p {
   color: white;
   font-size: clamp(18px, 1.67vw, 32px);
   font-weight: 600;
   font-family: "Rubik", sans-serif;
 }
 
-.copyright {
+.footer-copyright {
   font-size: clamp(12px, 1.04vw, 20px);
   font-weight: 400;
   color: white;
@@ -58,7 +58,7 @@ html, body {
   padding-top: 0.52vw;
 }
 
-.span-elem p {
+.footer-span-elem p {
   margin-bottom: 0.78vw;
   color: white;
   font-size: clamp(12px, 0.68vw, 16px);
@@ -66,27 +66,27 @@ html, body {
   font-family: "Lato", sans-serif;
 }
 
-.span-elem span {
+.footer-span-elem span {
   border-bottom: 0.26vw solid white;
   border-radius: 0.21vw;
   padding-bottom: 0.26vw;
   padding-top: 0.52vw;
 }
 
-.span {
+.footer-span {
   font-size: clamp(14px, 0.83vw, 20px);
   font-weight: 600;
   padding-bottom: 0.52vw;
 }
 
-.details p {
+.footer-details p {
   color: white;
   font-size: clamp(13px, 0.73vw, 16px);
   font-weight: 500;
   font-family: "Lato", sans-serif;
 }
 
-.details-title p {
+.footer-details-title p {
   font-size: clamp(16px, 1.04vw, 22px);
   font-weight: 500;
   color: white;
@@ -94,41 +94,41 @@ html, body {
   font-family: "Lato", sans-serif;
 }
 
-.dfimg {
+.footer-dfimg {
   display: flex;
   gap: clamp(10px, 1.04vw, 20px);
   flex-wrap: wrap;
 }
 
-.dfimg img {
+.footer-dfimg img {
   height: clamp(18px, 0.78vw, 24px);
   width: clamp(18px, 0.78vw, 24px);
 }
 
-.text {
+.footer-text {
   margin-bottom: 0.52vw;
 }
 
-
 @media (max-width: 768px) {
-  .dfx {
+  .footer-dfx {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .df {
+  .footer-df {
     flex-direction: row;
     gap: 10px;
   }
 
-  .logo-title p,
-  .copyright,
-  .details-title p,
-  .details p,
-  .span-elem p {
+  .footer-logo-title p,
+  .footer-copyright,
+  .footer-details-title p,
+  .footer-details p,
+  .footer-span-elem p {
     text-align: right;
   }
 }
-.details .text div:nth-child(2) {
+
+.footer-details .footer-text div:nth-child(2) {
   flex: 1;
 }

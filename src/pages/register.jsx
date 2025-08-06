@@ -47,7 +47,7 @@ function Register() {
                 <form>
                     <div className="register-form-grid">
                         <div className="register-form-field">
-                            <label htmlFor="category">Category</label>
+                            <label htmlFor="category"className="register-label">Category</label>
                             <select id="category">
                                 <option selected>Fullstack Development</option>
                                 <option>Data Science</option>
@@ -56,7 +56,7 @@ function Register() {
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="course">Course</label>
+                            <label htmlFor="course"className="register-label">Course</label>
                             <select id="course">
                                 <option selected>Python Fullstack Development</option>
                                 <option>MERN Stack</option>
@@ -65,17 +65,17 @@ function Register() {
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="duration">Duration</label>
+                            <label htmlFor="duration"className="register-label">Duration</label>
                             <input type="text" id="duration" className="input" value="3 Months" readOnly />
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="fullname">Full Name</label>
+                            <label htmlFor="fullname"className="register-label">Full Name</label>
                             <input type="text" id="fullname" className="input" placeholder="eg: John Doe" />
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="email"className="register-label">Email</label>
                             <div className="register-input-group-verify">
                                 <input type="email" id="email" className="input" placeholder="eg: john@email.com" />
                                 <span className="register-verify-link">Verify</span>
@@ -83,12 +83,12 @@ function Register() {
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="otp-email">One Time Password</label>
+                            <label htmlFor="otp-email"className="register-label">One Time Password</label>
                             <input type="text" id="otp-email" className="input" placeholder="Enter OTP" />
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="phone">Phone Number</label>
+                            <label htmlFor="phone"className="register-label">Phone Number</label>
                             <div className="register-input-group-verify">
                                 <input type="tel" id="phone" className="input" placeholder="+91 1234567890" />
                                 <span className="register-verify-link">Verify</span>
@@ -96,12 +96,12 @@ function Register() {
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="otp-phone">One Time Password</label>
+                            <label htmlFor="otp-phone"className="register-label">One Time Password</label>
                             <input type="text" id="otp-phone" className="input" placeholder="Enter OTP" />
                         </div>
 
                         <div className="register-form-field">
-                            <label htmlFor="amount">Amount</label>
+                            <label htmlFor="amount"className="register-label">Amount</label>
                             <input type="text" id="amount" className="input" value="6000.00" readOnly />
                         </div>
                     </div>
@@ -111,7 +111,7 @@ function Register() {
                             <input type="checkbox" id="terms" />
                         </div>
                         <div>
-                            <label htmlFor="terms">
+                            <label htmlFor="terms"className="register-label">
                                 I agree to the <a href="#">Terms of use</a> and our <a href="#">Privacy Policy</a>.
                             </label>
                         </div>

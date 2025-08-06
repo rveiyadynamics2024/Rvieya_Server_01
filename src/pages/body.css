@@ -8,6 +8,12 @@
  .main-container {
   height: 100vh;
  }
+label {
+  font-size: 14px;
+  font-weight: 600;
+  
+  
+}
 
 
 .title {
@@ -53,10 +59,13 @@
 .checkbox {
   display: flex;
   gap: 0.5vw;
-  padding-bottom: 0.8vw;
+  padding-bottom: 1.2vw;
+  align-items: center;
 }
 .checkbox p {
   font-size: 1rem;
+  text-align: center;
+  
 }
 
 /* --- Category Title --- */

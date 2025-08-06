@@ -1,6 +1,14 @@
 import '../CourseView.css'
+import { useNavigate } from "react-router-dom"; 
 
-function CourseViewDetailHeader({ title, price,category }) {
+
+function CourseViewDetailHeader({ title, price, category }) {
+    const navigate = useNavigate();
+
+    const handleRegisterClick = () => {
+        navigate("/register");
+    };
+
     return (
         <div>
             {/* COURSE TITLE AND PRICE */}
@@ -9,7 +17,7 @@ function CourseViewDetailHeader({ title, price,category }) {
                     <p>{title}</p>
                 </div>
                 <div className="course-price">
-                 <p>{price}</p>
+                    <p>{price}</p>
                 </div>
             </div>
             {/* END OF COURSE TITLE AND PRICE */}
@@ -20,34 +28,34 @@ function CourseViewDetailHeader({ title, price,category }) {
                 </div>
                 <div className="stars">
                     <div className="star">
-                       <img
-                                    src="../src/assets/star_filled_full.png"
-                                    alt="star_filled_full"
-                                />
+                        <img
+                            src="../src/assets/star_filled_full.png"
+                            alt="star_filled_full"
+                        />
                     </div>
                     <div className="star">
                         <img
-                                    src="../src/assets/star_filled_full.png"
-                                    alt="star_filled_full"
-                                />
-                    </div>
-                    <div className="star">
-                       <img
-                                    src="../src/assets/star_filled_full.png"
-                                    alt="star_filled_full"
-                                />
-                    </div>
-                    <div className="star">
-                       <img
-                                    src="../src/assets/star_filled_full.png"
-                                    alt="star_filled_full"
-                                />
+                            src="../src/assets/star_filled_full.png"
+                            alt="star_filled_full"
+                        />
                     </div>
                     <div className="star">
                         <img
-                                    src="../src/assets/star_filled_full.png"
-                                    alt="star_filled_full"
-                                />
+                            src="../src/assets/star_filled_full.png"
+                            alt="star_filled_full"
+                        />
+                    </div>
+                    <div className="star">
+                        <img
+                            src="../src/assets/star_filled_full.png"
+                            alt="star_filled_full"
+                        />
+                    </div>
+                    <div className="star">
+                        <img
+                            src="../src/assets/star_filled_full.png"
+                            alt="star_filled_full"
+                        />
                     </div>
                 </div>
                 <div className="rating-count">
@@ -57,25 +65,35 @@ function CourseViewDetailHeader({ title, price,category }) {
             {/* END OF COURSE RATINGS */}
             {/* LOCATION AND TIME */}
             <div className="location-time">
-                <div className="location">
-                    <p>Banglore</p>
+                <div className="time">
+                    <div className="location">
+                        <p>Banglore</p>
+                    </div>
+                    <div className="category">
+                        <div className="category-icon">
+                            <img src="../src/assets/stacks.png" alt="stacks" />
+                        </div>
+                        <div>
+                            <p>{category}</p>
+                        </div>
+                    </div>
+                    <div className="duration">
+                        <div className="timer-icon">
+                            <img src="../src/assets/timer.png" alt="timer" />
+                        </div>
+                        <div>
+                            <p>3 Months</p>
+                        </div>
+                    </div>
+                   
                 </div>
-                <div className="category">
-                    <div className="category-icon">
-                        <img src="../src/assets/stacks.png" alt="stacks" />
-                    </div>
-                    <div>
-                         <p>{category}</p>
-                    </div>
+                 <div className="register-btn">
+                        <div ><button onClick={handleRegisterClick}>Register Now</button></div>
+                         <div className="arrow-icon">
+                                    <img src="..src/assets/arrow_forward.png" alt="arrow forward" />
+                                </div>
                 </div>
-                <div className="duration">
-                    <div className="timer-icon">
-                        <img src="../src/assets/timer.png" alt="timer" />
-                    </div>
-                    <div>
-                        <p>3 Months</p>
-                    </div>
-                </div>
+
             </div>
             {/* END OF LOCATION AND TIME */}
         </div>

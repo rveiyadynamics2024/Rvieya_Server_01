@@ -45,17 +45,8 @@ function Header() {
         <div><NavLink to="/internships" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>Internships</NavLink></div>
         <div><NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>Blog</NavLink></div>
         <div><NavLink to="/testimonials" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>Testimonials</NavLink></div>
-
-        {/* <div className="dfng dropdown" onClick={toggleLMSDropdown}>
-          <span className="nav-link">LMS Login</span>
-          <img src="/images/Polygon 44.png" alt="" />
-          {isLMSOpen && (
-            <ul className="dropdown-menu">
-              <li><NavLink to="/lms/student" className="dropdown-item">Student Portal</NavLink></li>
-              <li><NavLink to="/lms/instructor" className="dropdown-item">Instructor Portal</NavLink></li>
-            </ul>
-          )}
-        </div> */}
+         <div><NavLink to="/Settings" className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}>Settings </NavLink></div>
+        
       </div>
 
       {/* Hamburger for Mobile */}
