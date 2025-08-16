@@ -8,7 +8,7 @@ function TraineeDetails() {
             {/* TRAINEE DETAILS */}
             <div className="trainee-details">
                 <div className="trainee-image">
-                    <img src="../src/assets/face.png" alt="face" />
+                    <img src="../src/assets/trainer.png" alt="face" />
                 </div>
                 <div>
                     <div className="trainee-info-name">
@@ -27,7 +27,7 @@ function TraineeDetails() {
                     JavaScript and Python, along with frameworks like React. With a strong
                     grasp of web development, application design, and agile methodologies,
                     they bring both technical expertise and practical knowledge to their
-                    training sessions. Read more...
+                    training sessions. <a href="">Read more...</a>
                 </p>
             </div>
             {/* END OF TRAINEE DETAILS */}

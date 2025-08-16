@@ -1,10 +1,5 @@
 /* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "lato", sans-serif;
-}
+
 
 /* Heading */
 /* h3 {
@@ -34,7 +29,7 @@
 }
 .it-firs {
    margin-top: 40px;
-    
+    font-size: 24px;
     margin-left: 70px;
    
 }
@@ -47,15 +42,16 @@
     margin-top: 1.56vw;
 }
 .it-first h1 {
-    font-size: 1.15vw;
+    font-size: 22px;
     color: #00317B;
     line-height: 2.08vw;
     font-weight: 600;
+    margin-top: 10px;
 }
 .it-first p {
     color: #333232;
-    font-size: 0.89vw;
-    margin-top: 0.52vw;
+    font-size: 20px;
+    margin-top: 0.72vw;
     line-height: 1.56vw;
 }
 
@@ -72,7 +68,7 @@
 }
 .it-list {
     margin-left: 1.3vw;
-    font-size: 0.94vw;
+    font-size: 20px;
     line-height: 1.46vw;
     margin-top: 1.04vw;
 }
@@ -98,10 +94,10 @@
 }
 .it-child1 h1, .it-child2 h1, .it-child3 h1, .it-child4 h1, .it-last h1 {
     color: #00317B;
-    font-size: 1.25vw;
+    font-size: 20px;
 }
 .it-child1 h2, .it-child2 h2, .it-child3 h2, .it-child4 h2, .it-last h2 {
-    font-size: 0.89vw;
+    font-size: 18px;
     margin-top: 1.3vw;
 }
 

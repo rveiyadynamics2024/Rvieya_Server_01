@@ -71,7 +71,8 @@ function HomepageContent() {
         </p>
 
         <h4 className="home-service-heading home-color">We are offering the below services:</h4>
-        <p className="home-who-desc">RVEIYA DYNAMICS PVT LTD is committed to empowering students...</p>
+        <div><p className="home-who-descc">RVEIYA DYNAMICS PVT LTD is committed to empowering students with industry relevenat skillsand practical experience through a comprehensive range of services and features</p></div>
+
         <ul className="home-service-list">
           <li>Affordable Courses: Access high-quality, industry-aligned training at cost-effective prices.</li>
           <li>Flexible Payment Plans: Make education more accessible with convenient, term-wise installment options.</li>
@@ -91,40 +92,46 @@ function HomepageContent() {
 
       <div className="home-section4">
         <div className="home-heading-row">
-          <h3>Courses We Offer</h3>
-          <a href="#" className="home-view-all">View All </a>
+          <h3><span>Courses </span>We Offer</h3>
+         <div className='home-view-all'><a href="">View All</a></div>
+          
         </div>
 
         <div className="home-card-grid">
           {[{
             img: pythonCourse,
             title: "Python Fullstack Development",
-            price: "₹219"
+            price: "$219"
           }, {
             img: javaCourse,
             title: "Java Fullstack Development",
-            price: "₹699"
+            price: "$699"
           }, {
             img: webCourse,
             title: "Web Development Fullstack",
-            price: "₹119"
+            price: "$199"
           }].map((course, index) => (
             <div className="home-card" key={index}>
               <img src={course.img} alt={course.title} />
               <div className="home-card-body">
                 <h4 className="home-color">{course.title}</h4>
-                <div className="home-ratings">
-                  <p className="home-rating1">4.5</p>
-                  <p className="home-rating2">★★★★★</p>
-                  <p className="home-rating3">(1,235)</p>
+                <div className='home-dff'>
+                  <div className="home-ratings">
+                    <p className="home-rating1">4.5</p>
+                    <p className="home-rating2">★★★★★</p>
+                    <p className="home-rating3">(1,235)</p>
+                  </div>
+
+
+                  <div className="home-time_money">
+                    <p className="home-duration">
+                      <img src={timerIcon} alt="duration" />
+                      3 Months
+                    </p>
+
+                  </div>
                 </div>
-                <div className="home-time_money">
-                  <p className="home-duration">
-                    <img src={timerIcon} alt="duration" />
-                    3 Months
-                  </p>
-                  <p className="home-price">{course.price}</p>
-                </div>
+                <p className="home-price">{course.price}</p>
                 <div class="reg-btns">
                   <a href="#" class="home-register-btn">Register Now →</a>
                 </div>
@@ -136,41 +143,44 @@ function HomepageContent() {
         </div>
 
         <div className="home-heading-row">
-          <h3>Internships We Offer</h3>
-          <a href="#" className="home-view-all">View All </a>
+          <h3><span>Internships </span> We Offer</h3>
+          <div className='home-view-all'> <a href="">View All </a></div>
+         
         </div>
 
         <div className="home-card-grid">
           {[{
             img: socialMediaImg,
             title: "Social Media Marketing",
-            price: "₹219"
+            price: "$219"
           }, {
             img: digitalMarketingImg,
             title: "Digital Marketing",
-            price: "₹699"
+            price: "$699"
           }, {
             img: contentWritingImg,
             title: "Content Writing",
-            price: "₹119"
+            price: "$199"
           }].map((internship, index) => (
             <div className="home-card" key={index}>
               <img src={internship.img} alt={internship.title} />
               <div className="home-card-body">
                 <h4 className="home-color">{internship.title}</h4>
-                <div className="home-ratings">
-                  <p className="home-rating1">4.5</p>
-                  <p className="home-rating2">★★★★★</p>
-                  <p className="home-rating3">(1,235)</p>
+                <div className='home-dff'>
+                  <div className="home-ratings">
+                    <p className="home-rating1">4.5</p>
+                    <p className="home-rating2">★★★★★</p>
+                    <p className="home-rating3">(1,235)</p>
+                  </div>
+                  <div className="home-time_money">
+                    <p className="home-duration">
+                      <img src={timerIcon} alt="duration" />
+                      3 Months
+                    </p>
+                  </div>
                 </div>
-                <div className="home-time_money">
-                  <p className="home-duration">
-                    <img src={timerIcon} alt="duration" />
-                    3 Months
-                  </p>
+                <p className="home-price">{internship.price}</p>
 
-                  <p className="home-price">{internship.price}</p>
-                </div>
                 <div class="reg-btns">
                   <a href="#" class="home-register-btn">Register Now →</a>
                 </div>
@@ -178,8 +188,10 @@ function HomepageContent() {
             </div>
           ))}
         </div>
-        <div className='home-headline'>
-          <h3><span>Testim</span>onials</h3>
+        <div className='home-headlinee'>
+          <div> <h3><span>Testim</span>onials</h3></div>
+          <div className='home-view-all'><a href="">View All</a></div>
+
         </div>
         <div className="home-container">
 

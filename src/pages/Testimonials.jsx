@@ -8,7 +8,7 @@ const Testimonials = () => {
     text: `I have invested considerable time researching various online platforms, its course offerings,
     learning programs, instructor quality, pricing structures, refund policies, as well as
     analyzing user feedback.`,
-    author: 'By John Doe | 27th July 2025',
+    author: 'By John Doe | 27/08/2025',
   });
     return (
       <div className="testomonial-container">

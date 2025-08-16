@@ -39,11 +39,6 @@ img {
     display: block;
 }
 
-.right-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 .right-header p {
     color: white;

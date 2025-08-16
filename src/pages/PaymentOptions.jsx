@@ -54,7 +54,7 @@ const PaymentOptions = () => {
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/375px-QR_code_for_mobile_English_Wikipedia.svg.png"
                   alt="QR Code"
                 />
-                <p style={{ paddingLeft: "30%" }}>Scan the QR code and pay via Razorpay</p>
+                <p className="razor-text">Scan the QR code and pay via Razorpay</p>
               </div>
             )}
           </div>

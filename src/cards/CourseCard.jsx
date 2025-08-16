@@ -20,21 +20,25 @@ function CourseCard({ course }) {
 
             {/* Text Section */}
             <div className="course-info">
-                <h3 className="course-title">{course.title}</h3>
+                <div className='coursess'>
+                    <div> <h3 className="course-title">{course.title}</h3></div>
+                    <div>
+                        <h3 className="course-pricee">₹{course.price}</h3>
+                    </div>
+                </div>
 
                 <div className="course-rating">
                     <div className='star-rating'>
+                        <span className='number'>{course.rating}</span>
                         <img src="/images/Star 1.png" alt="Star" className="icon" />
                         <img src="/images/Star 1.png" alt="Star" className="icon" />
                         <img src="/images/Star 1.png" alt="Star" className="icon" />
                         <img src="/images/Star 1.png" alt="Star" className="icon" />
                         <img src="/images/Star 1.png" alt="Star" className="icon" />
-                        <span>{course.rating}</span>
+
                         <span className="review-count">({course.reviews})</span>
                     </div>
-                    <div>
-                        <h3 className="course-price">₹{course.price}</h3>
-                    </div>
+
                 </div>
 
                 <div className='course-description'>

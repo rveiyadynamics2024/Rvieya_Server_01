@@ -64,8 +64,9 @@
 .edu-child1 p {
     color: #333232;
     line-height: 30px;
-    font-size: 17px;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 25px ;
+
 }
 
 .edu-big {
@@ -79,8 +80,8 @@
     border: 1px solid transparent;
     width: 93%;
     margin-left: 48px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+
+    
 }
 
 .edu-child2 h1 {
@@ -90,17 +91,17 @@
 }
 
 .edu-child2 p {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 25px;
 }
 
 .edu-para {
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 7px;
 }
 
 .edu-child2 h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .edu-child3 {
@@ -115,7 +116,7 @@
 }
 
 .edu-lists {
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 25px;
     margin-bottom: 10px;
     line-height: 30px;
@@ -154,6 +155,7 @@
 .edu-child11 {
     height: 180px;
     width: 240px;
+
 }
 
 .edu-child22 {
@@ -167,7 +169,7 @@
 }
 
 .edu-child11 h1, .edu-child22 h1, .edu-child33 h1 {
-    font-size: 17px;
+    font-size: 20px;
     color: #333232;
 }
 

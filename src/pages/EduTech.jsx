@@ -17,7 +17,7 @@ function EduTechServices() {
             <div className="edu-big">
                 <div className="edu-child2">
                     <h1>Our Services</h1><br />
-                    <p>EdTech is more than just a technology provider...</p><br />
+                    <p>EdTech is more than just a technology provider; we are partners in shaping the future of education. Whether you are an educator or an institution, we support you every step of the way.</p><br />
                     <h2>Mission:</h2>
                     <p className="edu-para">Revolutionize education through cutting-edge technology...</p>
                 </div>

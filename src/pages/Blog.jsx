@@ -7,7 +7,7 @@ const Blog = () => {
     title: "🚀 Join Our Exclusive Online Course Webinar!",
     description:
       "Boost Your Career with Our Exclusive Webinar Register Now! Are you looking to super charge your career and stand out in the competitive job market? Don’t miss our upcoming free webinar on Career Guidance & Full Stacks Web Development. This is your chance to learn from experts and gain insights that can transform your professional journey.",
-    date: "27th July 2025",
+    date: "27/07/2025",
     image: "/images/webinar.png",
   });
 

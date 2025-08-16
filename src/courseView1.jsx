@@ -22,7 +22,7 @@ function CourseView1() {
                 </div>
                 <div className="back-link">
                     <div className="chevron">
-                        <img src="/assets/chevron_backward.png" alt="chevron_backward" />
+                        <img src="../src/assets/chevron_backward.png" alt="chevron_backward" />
                     </div>
                     <div className="back-text">
                         <p>Back</p>
@@ -32,12 +32,12 @@ function CourseView1() {
 
             <div className="course-content">
                 <div className="course-details">
-                  <CourseViewDetailHeader
-  title="Python Full Stack Development"
-  price="₹6000.00"
-  category="Fullstack Development"
-  handleRegisterClick={handleRegisterClick}
-/>
+                    <CourseViewDetailHeader
+                        title="Python Full Stack Development"
+                        price="₹6000"
+                        category="Fullstack Development"
+                        handleRegisterClick={handleRegisterClick}
+                    />
 
 
 
@@ -73,15 +73,15 @@ function CourseView1() {
                             <div className="meta-label"><p>Timing Duration</p></div>
                             <div className="meta-value"><p>3 Months</p></div>
                         </div>
-                      
-                         <div className="meta-item">
+
+                        <div className="meta-item">
                             <div className="meta-label"><p>Placement</p></div>
-                           <div className="meta-value"><p>₹6500</p></div>
+                            <div className="meta-value"><p>₹6500</p></div>
 
                         </div>
                         <div className="meta-item">
                             <div className="meta-label"><p> WithoutPlacement</p></div>
-                           <div className="meta-value"><p>₹6000</p></div>
+                            <div className="meta-value"><p>₹6000</p></div>
 
                         </div>
                     </div>

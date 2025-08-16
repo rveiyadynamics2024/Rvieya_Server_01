@@ -58,9 +58,11 @@ function App() {
 
             {/* Dynamic course detail view */}
             <Route path="/courseview/:id" element={<CourseView1 />} />
-            <Route path="/courseview/2" element={<CourseView2 />} />
+            <Route path="/courseview2/:id" element={<CourseView2 />} />
             <Route path="/settings" element={<SettingPage />} />
             <Route path="/feedback" element={<FeedbackPage />} />
+            <Route path="/" element={<Home />} />
+
 
 
           </Routes>

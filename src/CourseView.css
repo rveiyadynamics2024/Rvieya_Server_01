@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+
 
 img {
     display: block;
@@ -51,6 +46,10 @@ img {
     display: flex;
     gap: 20px;
 }
+.chevron img {
+    width: 25px;
+}
+
 
 .course-details {
     border-radius: 10px;
@@ -68,14 +67,14 @@ img {
 
 .course-title-text p {
     color: #00317B;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 800;
 }
 
 .course-price p {
     color: #00317B;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .course-ratings {
@@ -118,7 +117,8 @@ img {
 
 .location {
     background-color: #DAE9FF;
-    padding: 7px 13px;
+    padding: 10px 15px;
+    border-radius: 16px;
 }
 
 .location p {
@@ -154,7 +154,7 @@ img {
 .course-image {
     width: 100%;
     overflow: hidden;
-    border-radius: 16px;
+   
 }
 
 .course-description {
@@ -163,13 +163,14 @@ img {
 
 .description-title p {
     color: #515151;
+    padding-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .description-text p {
     color: #000;
-    font-size: 0.8rem;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -211,8 +212,8 @@ img {
     margin-bottom: 10px;
 }
 
-.trainee-image {
-    width: 69px;
+.trainee-image img {
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -233,7 +234,8 @@ img {
 .course-meta {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 15px;
+    
 }
 
 .meta-item {
@@ -249,7 +251,7 @@ img {
 
 .meta-value p {
     color: #00317B;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -264,6 +266,7 @@ img {
     background-color: #00317B;
     padding: 10px 15px;
     color: #FFF;
+    border: none;
 }
 
 

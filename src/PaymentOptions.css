@@ -109,10 +109,15 @@ input[type="radio"] {
   align-items: center;
   margin-top: 5px;
 }
-
+.razor-text{
+  color: rgba(104, 103, 103, 1);
+;
+}
 .pay-details {
   padding: 0.52vw; /* 10px */
   display: flex;
+  align-items: center;
+  
   flex-direction: column;
   gap: 0.52vw; /* 10px */
 }
@@ -138,8 +143,9 @@ input[type="radio"] {
 #razorpayDetails img {
   width: 7.29vw; /* 140px */
   height: 7.29vw;
+  margin: 0;
   object-fit: contain;
-  margin-left: 21.88vw; /* 42% of 100vw */
+ /* 42% of 100vw */
 }
 
 #payBtn {

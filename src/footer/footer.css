@@ -31,16 +31,25 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
 }
-
+.footer-dff {
+  display: flex;
+gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .footer-dfx {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
+}
+.footer-logoimg {
+padding-bottom: 15px;
 }
 
 .footer-logoimg img {
-  width: clamp(80px, 13.37vw, 130px);
+  width: 80px;
 }
 
 .footer-logo-title p {

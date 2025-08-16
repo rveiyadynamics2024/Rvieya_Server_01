@@ -5,10 +5,11 @@
   justify-content: space-between;
   border: 1px solid #ccc;
   border-radius: 1.56vw; /* ~30px at 1920px */
-  padding: 0.83vw;       /* ~16px */
+  padding: 16px;       /* ~16px */
   background-color: #fff;
   box-shadow: 0px 0px 0.42vw rgba(0, 0, 0, 0.08); /* ~8px */
   flex-wrap: wrap;
+  
 }
 
 .course-image-wrapper {
@@ -18,7 +19,8 @@
 
 .course-image {
   width: 100%;
-  border-radius: 0.42vw; /* ~8px */
+  padding-left: 12px;
+  /* ~8px */
   object-fit: cover;
 }
 
@@ -29,15 +31,15 @@
 }
 
 .course-title {
-  font-size: 0.94vw; /* ~18px */
+  font-size: 20px; /* ~18px */
   font-weight: 600;
 }
 
 .course-rating {
   display: flex;
   align-items: center;
-  font-size: 0.73vw; /* ~14px */
-  margin: 0.31vw 0;
+  font-size: 0.93vw; /* ~14px */
+ 
   color: #ffa000;
   justify-content: space-between;
 }
@@ -58,6 +60,21 @@
   color: #888;
   margin-left: 0.31vw;
 }
+.coursess{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.course-pricee{
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+ margin-right: 10px;
+  color: #003366;
+ 
+}
 
 .course-meta {
   display: flex;
@@ -66,13 +83,13 @@
   color: #333;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 0.52vw;
+  
 }
 
 .course-meta img {
   width: 0.73vw;
   height: 0.73vw;
-  margin-right: 0.21vw;
+  
   vertical-align: middle;
 }
 
@@ -84,7 +101,7 @@
 
 .course-tag p {
   font-weight: 500;
-  font-size: 0.63vw;
+  font-size: 0.83vw;
   color: rgba(0, 49, 123, 1);
 }
 
@@ -108,10 +125,11 @@
 }
 
 .course-price {
-  font-size: 0.94vw;
-  font-weight: bold;
+  font-size: 1vw;
+ 
   color: #003366;
-  margin-bottom: 0.42vw;
+ 
+
 }
 
 .register-button{

@@ -1,8 +1,17 @@
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import CourseList from '../cards/CourseList';
 import './rightcontainer.css';
 
 function RightContainer({ selectedCategory }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Determine if we are on courses or internships page
+  const pageType = location.pathname.includes("internship")
+    ? "internship"
+    : "course";
+
   const allCourses = [
     {
       id: 1,
@@ -34,7 +43,6 @@ function RightContainer({ selectedCategory }) {
       price: 3500,
       image: "/images/digitalmarketing.png",
     },
-    // ✅ Add more courses with unique IDs if needed
   ];
 
   const filteredCourses =
@@ -42,13 +50,29 @@ function RightContainer({ selectedCategory }) {
       ? allCourses
       : allCourses.filter(course => course.category === selectedCategory);
 
+  // Handle clicking a course
+  const handleCourseClick = (courseId) => {
+    if (pageType === "internship") {
+      navigate(`/courseView2/${courseId}`);
+    } else {
+      navigate(`/courseview/${courseId}`);
+    }
+  };
+
   return (
     <div className="right-container">
       <div className="title-container1">
-        <p>{selectedCategory === "All" ? "All Courses" : selectedCategory}</p>
+        <p>
+          {selectedCategory === "All"
+            ? (pageType === "course" ? "All Courses" : "All Internships")
+            : selectedCategory}
+        </p>
       </div>
       <div className="courses-container">
-        <CourseList courses={filteredCourses} />
+        <CourseList
+          courses={filteredCourses}
+          onCourseClick={handleCourseClick}
+        />
       </div>
     </div>
   );

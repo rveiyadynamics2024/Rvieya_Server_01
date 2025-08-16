@@ -1,5 +1,5 @@
 import '../CourseView.css'
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 
 function CourseViewDetailHeader({ title, price, category }) {
@@ -67,7 +67,7 @@ function CourseViewDetailHeader({ title, price, category }) {
             <div className="location-time">
                 <div className="time">
                     <div className="location">
-                        <p>Banglore</p>
+                        <p>Courses</p>
                     </div>
                     <div className="category">
                         <div className="category-icon">
@@ -85,13 +85,16 @@ function CourseViewDetailHeader({ title, price, category }) {
                             <p>3 Months</p>
                         </div>
                     </div>
-                   
+
                 </div>
-                 <div className="register-btn">
-                        <div ><button onClick={handleRegisterClick}>Register Now</button></div>
-                         <div className="arrow-icon">
-                                    <img src="..src/assets/arrow_forward.png" alt="arrow forward" />
-                                </div>
+                <div className="register-btn">
+                    <div>
+  <button onClick={handleRegisterClick}>
+    Register Now → 
+  </button>
+</div>
+
+                   
                 </div>
 
             </div>

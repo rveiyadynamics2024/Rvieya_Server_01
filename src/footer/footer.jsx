@@ -7,9 +7,9 @@ function Footer() {
             <div className="footer-wrapper">
                 <div className="footer-dfx">
                     {/* Logo and Title */}
-                    <div className="footer-df">
+                    <div className="footer-dff">
                         <div className="footer-logoimg">
-                            <img src="/images/logo.png" alt="Logo" />
+                            <img src="/images/logo3.png" alt="Logo" />
                         </div>
                         <div className="footer-logo-title">
                             <p>RIVEYA DYNAMICS PRIVATE LIMITED</p>

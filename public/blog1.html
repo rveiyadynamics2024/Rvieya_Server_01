@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "lato", sans-serif;
+
+        }
+
+        .title {}
+
+        .container {
+
+            border: 1px solid rgba(58, 137, 255, 1);
+            border-radius: 12px;
+            margin: 10px;
+
+
+        }
+
+        .padding {}
+
+        .inputs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .title {
+            flex: 0 0 49%;
+        }
+
+        .inputs input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid rgba(156, 156, 156, 1);
+            border-radius: 9px;
+        }
+
+        #category,
+        #enrolment {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid rgba(156, 156, 156, 1);
+            border-radius: 9px;
+        }
+
+        .desc,
+        .image,
+        .buttons {
+            width: 100%;
+            padding: 0px 15px 0px 0px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+
+        }
+
+        .desc textarea {
+            width: 100%;
+            padding: 25px 10px;
+            border-radius: 9px;
+            border: 1px solid rgba(156, 156, 156, 1);
+
+        }
+
+        .upload-box {
+            background-color: #edf0ff;
+            /* Light blue background */
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #d0d7ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+   .inputs{
+    padding-bottom: 15px;
+   }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            padding-top: 20px;
+            justify-content: flex-end;
+        }
+
+        .add-course {
+            border-bottom: 1px solid rgba(58, 137, 255, 1);
+            width: 100%;
+            padding: 15px 30px;
+
+        }
+        .add-course p {
+            font-size: 20px;
+            font-weight: 600;
+        color: rgba(0, 49, 123, 1);
+
+        }
+
+        .hedd {
+            padding: 30px;
+        }
+
+        .p {
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 10px;
+   
+        }
+       .image{
+        padding-top: 10px;
+       }
+       .cancel button{
+     color: rgba(95, 95, 95, 1);
+
+       
+       }
+       .save button{
+    border: none;
+    color: white;
+        background-color: rgba(0, 49, 123, 1);
+
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="padding">
+            <div class="add-course">
+                <p>Add Course</p>
+            </div>
+            <div class="hedd">
+
+                <div class="inputs">
+                    <div class="title">
+                        <div class="p">
+                            <p>Title</p>
+                        </div>
+                        <div><input type="text" placeholder="Enter Title"></div>
+                    </div>
+                    <div class="title">
+                        <div class="p">
+                            <p>Category</p>
+                        </div>
+                        <div class="select">
+
+                            <select id="category" name="category">
+
+                                <option value="fullstack">Full Stack Development</option>
+                                <option value="datascience">Data Science</option>
+                                <option value="uiux">UI/UX Design</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="cloud">Cloud Computing</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="title">
+                        <div class="p">
+                            <p>Type of Enrollment</p>
+                        </div>
+                        <div class="select">
+                            <select id="enrolment" name="enrolment">
+
+
+                                <option value="online">Online</option>
+                                <option value="offline">Offline</option>
+                                <option value="hybrid">Hybrid (Online + Offline)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div class="p">
+                            <p>Price</p>
+                        </div>
+                        <div><input type="text" placeholder="Enter Title"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="p">
+                        <p>Description</p>
+                    </div>
+                    <div><textarea name="" id="" placeholder="Enter The Description"></textarea></div>
+                </div>
+                <div class="image">
+                    <div class="p">
+                        <p>Upload Image</p>
+                    </div>
+                    <div class="upload-box">
+                        <img src="../public/images/upload.png" alt="Upload Icon" />
+                        <p>Upload Image</p>
+                        <div> <input type="file" id="fileUpload" accept="image/*" /></div>
+                    </div>
+                </div>
+
+
+                <div class="buttons">
+                    <div class="cancel"><button>Cancel</button></div>
+                    <div class="save"><button>SAVE</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

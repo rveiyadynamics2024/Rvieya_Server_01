@@ -1,6 +1,7 @@
 // SuccessPopup.jsx
 import React from "react";
 import "../Sucess.css";
+import { Link } from "react-router-dom";
 
 const SuccessPopup = ({ onClose }) => {
     return (
@@ -24,7 +25,11 @@ const SuccessPopup = ({ onClose }) => {
                                 <span>Join in Whatsapp</span>
                             </button>
                         </div>
+
                     </div>
+                   <div className="go-home">
+  <Link to="/">Go Home</Link>
+</div>
                 </div>
 
                 <button onClick={onClose} className="success-close-btn">×</button>

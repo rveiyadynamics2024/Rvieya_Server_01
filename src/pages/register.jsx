@@ -29,7 +29,7 @@ function Register() {
                             </div>
                         </div>
                         <div className="register-part2c">
-                            <div className="register-pill">Bangalore</div>
+                            <div className="register-pill">Courses</div>
                             <div className="register-name3">
                                 
                                    <img src="../images/cap.png" alt="" />
@@ -37,8 +37,8 @@ function Register() {
                                 <span className="register-txt">Fullstack Development</span>
                             </div>
                             <div className="register-df">
-                                <img src="../images/timer.png" alt="" />
-                                <span className="register-time"> 3 Months</span>
+                                <img src="../images/duration.png" alt="" />
+                                <span className="register-time"> <p>3 Months</p></span>
                             </div>
                         </div>
                     </div>
@@ -61,6 +61,14 @@ function Register() {
                                 <option selected>Python Fullstack Development</option>
                                 <option>MERN Stack</option>
                                 <option>Java Fullstack</option>
+                            </select>
+                        </div>
+                           <div className="register-form-field">
+                            <label htmlFor="course"className="register-label">Placement Assitence</label>
+                            <select id="course">
+                                <option selected>Without Placement</option>
+                                <option>With Placement</option>
+                               
                             </select>
                         </div>
 

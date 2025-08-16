@@ -50,15 +50,7 @@ span{
   font-size: 1rem;
 }
 
-/* --- Category Title --- */
-.category-title {
-  padding: 2vw 0 1.5vw;
-}
-.category-title p {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
-}
+
 
 /* --- Layout Containers --- */
 .left-container {
@@ -178,7 +170,7 @@ span{
 
 /* --- Category Title --- */
 .category-title {
-  padding: 2vw 0 1.5vw;
+  padding: 1vw 0 1.1vw;
 }
 .category-title p {
   font-size: 1.2rem;
@@ -195,39 +187,52 @@ span{
   justify-content: space-between;
   border: 1px solid #ccc;
   border-radius: 1.56vw; /* ~30px at 1920px */
-  padding: 0.83vw;       /* ~16px */
+       /* ~16px */
   background-color: #fff;
   box-shadow: 0px 0px 0.42vw rgba(0, 0, 0, 0.08); /* ~8px */
   flex-wrap: wrap;
 }
 
 .course-image-wrapper {
-  width: 10.42vw; /* ~200px */
+  width: 10.52vw; /* ~200px */
   flex-shrink: 0;
 }
 
 .course-image {
   width: 100%;
-  border-radius: 0.42vw; /* ~8px */
+  /* ~8px */
   object-fit: cover;
 }
 
+.course-price-wrapper{
+  padding-top: 5px;
+}
+
+
+
 .course-info {
-  padding-left: 1.04vw; /* ~20px */
+  padding-left: 1vw;
+/* ~20px */
   flex: 1;
   min-width: 40%;
+
+ 
 }
 
 .course-title {
-  font-size: 0.94vw; /* ~18px */
+  font-size: 1.1vw; /* ~18px */
   font-weight: 600;
+  margin-top: 10px;
 }
-
+.number{
+  color: black;
+  margin-right: 3px;
+}
 .course-rating {
   display: flex;
   align-items: center;
   font-size: 0.73vw; /* ~14px */
-  margin: 0.31vw 0;
+padding-top: 10px;
   color: #ffa000;
   justify-content: space-between;
 }
@@ -237,6 +242,7 @@ span{
   display: flex;
   align-items: center;
   color: #ffa000;
+  
 }
 
 .course-rating .icon {
@@ -257,7 +263,7 @@ span{
   color: #333;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 0.52vw;
+  
 }
 
 .course-meta img {
@@ -269,7 +275,7 @@ span{
 
 .course-tag {
   background-color: rgba(218, 233, 255, 1);
-  padding: 0.26vw;
+  padding: 0.36vw 0.86vw;
   border-radius: 0.73vw;
 }
 
@@ -299,19 +305,20 @@ span{
 }
 
 .course-price {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-weight: 700;
   color: #003366;
   margin-bottom: 0.42vw;
+  margin-right: 10px;
 }
 
-.register-bt {
+.register-button  {
   background-color: #003366;
   color: white;
   border: none;
-  padding: 0.42vw 0.78vw;
+  padding: 0.62vw 0.88vw;
   border-radius: 1.04vw;
-  font-size: 0.73vw;
+  font-size: 0.83vw;
   cursor: pointer;
   margin-right: 0.42vw;
 }
@@ -328,6 +335,7 @@ span{
   align-items: center;
   gap: 2.6vw; /* ~50px */
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 /* 📱 Responsive (mobile-first) tweaks */

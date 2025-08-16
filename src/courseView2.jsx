@@ -3,9 +3,12 @@ import TechStack from './viewComponents/TechStack.jsx';
 import TraineeDetails from './viewComponents/TraineeDetails.jsx';
 import CourseViewDetailHeader from './viewComponents/CourseViewDetailHeader.jsx';
 import './CourseView.css';
+import { useNavigate } from 'react-router-dom'; 
+
 
 function CourseView2() {
-    const navigate = useNavigate(); // ✅ Define navigate
+    const navigate = useNavigate();
+     const { id } = useParams();// ✅ Define navigate
 
     const handleRegisterClick = () => {
         navigate("/Register"); // 
@@ -14,7 +17,7 @@ function CourseView2() {
         <div className="maincontainer">
             <div className="course-header">
                 <div className="course-title">
-                    <span>Course</span><span>s</span>
+                    <span>Internship</span><span>s</span>
                 </div>
                 <div className="back-link">
                     <div className="chevron">
@@ -55,7 +58,7 @@ function CourseView2() {
                         </div>
                     </div>
 
-                    <TechStack />
+                    
                     <TraineeDetails />
 
                     <div className="course-meta">
@@ -69,11 +72,11 @@ function CourseView2() {
                         </div>
                         <div className="meta-item">
                             <div className="meta-label"><p>Cost</p></div>
-                            <div className="meta-value"><p>6000</p></div>
+                            <div className="meta-value"><p>800</p></div>
                         </div>
                         <div>
                             <div className="register-btn">
-                                <div ><button onClick={handleRegisterClick}>Register Now  &rarr;</button>
+                                <div ><button onClick={handleRegisterClick}>Apply Now  &rarr;</button>
                              
                                     <img src="/assets/arrow_forward.png" alt="arrow forward" />
                                 </div>
