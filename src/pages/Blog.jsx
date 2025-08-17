@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../blog.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
+const API_URL = 'http://localhost:5000/api/blogs'; // replace with your actual backend
 
 const Blog = () => {
-  const cards = Array(4).fill({
-    title: "🚀 Join Our Exclusive Online Course Webinar!",
-    description:
-      "Boost Your Career with Our Exclusive Webinar Register Now! Are you looking to super charge your career and stand out in the competitive job market? Don’t miss our upcoming free webinar on Career Guidance & Full Stacks Web Development. This is your chance to learn from experts and gain insights that can transform your professional journey.",
-    date: "27/07/2025",
-    image: "/images/webinar.png",
-  });
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get(API_URL);
+        console.log('Blogs API response:', response.data); // debug
+        setBlogs(response.data.blogs || response.data || []);
+      } catch (err) {
+        console.error(err);
+        setError('Failed to fetch blogs.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+  if (loading) return <p>Loading blogs...</p>;
+  if (error) return <p>{error}</p>;
+  if (!blogs || blogs.length === 0) return <p>No blogs found.</p>;
 
   return (
     <div className="blog-container">
@@ -18,23 +38,22 @@ const Blog = () => {
       </div>
       <div className="blog-padding">
         <div className="blog-card-container">
-          {cards.map((card, index) => (
-            <div className="blog-cards" key={index}>
+          {blogs.map((blog) => (
+            <div className="blog-cards" key={blog._id}>
               <div className="blog-img">
-
-                <Link to="/blogdetail">
-                  <img src={card.image} alt="Webinar" />
+                <Link to={`/blogdetail/${blog._id}`}>
+                  <img src={blog.image || '/images/default.png'} alt={blog.title} />
                 </Link>
               </div>
               <div className="blog-content">
                 <div className="blog-title">
-                  <p>{card.title}</p>
+                  <p>{blog.title}</p>
                 </div>
                 <div className="blog-description">
-                  <p>{card.description}</p>
+                  <p>{blog.shortDescription || blog.description.slice(0, 100) + '...'}</p>
                 </div>
                 <div className="blog-date">
-                  <p>{card.date}</p>
+                  <p>{blog.date}</p>
                 </div>
               </div>
             </div>

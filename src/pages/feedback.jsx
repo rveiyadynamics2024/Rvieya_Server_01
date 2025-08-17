@@ -1,8 +1,24 @@
-// src/pages/FeedbackPage.jsx
-import React from 'react';
-import '../testomonial.css'; // Or a separate CSS if needed
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../testomonial.css';
 
 function FeedbackPage() {
+  const [name, setName] = useState('');
+  const [feedback, setFeedback] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/api/testimonials', { name, feedback });
+      setMessage('Thank you for your feedback!');
+      setName('');
+      setFeedback('');
+    } catch (err) {
+      setMessage('Error submitting feedback');
+    }
+  };
+
   return (
     <div className="testomonial-form">
       <div className="testomonial-form-container">
@@ -13,17 +29,19 @@ function FeedbackPage() {
 
           <div className="testomonial-name">
             <p>Name</p>
-            <input type="text" />
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
 
           <div className="testomonial-feedback">
             <p>Feedback</p>
-            <textarea cols="30" rows="5"></textarea>
+            <textarea cols="30" rows="5" value={feedback} onChange={(e) => setFeedback(e.target.value)} />
           </div>
 
           <div className="testomonial-submit">
-            <button>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
           </div>
+
+          {message && <p>{message}</p>}
         </div>
       </div>
     </div>

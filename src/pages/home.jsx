@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Home.css';
+import axios from 'axios';
 
 import heroImg from '../assets/2b3385cded9b07c99fab8b38d0a637871d1397ee.png';
 import edutechImg from '../assets/Screenshot 2025-06-14 172337.png';
@@ -23,6 +24,20 @@ import p5 from '../assets/9edb8055ca0d2f7cb4fa352d15b92abde984c741.png';
 import p6 from '../assets/dd008b27362ee25e8cdf434eba5ac5967765e5ab.png';
 
 function HomepageContent() {
+   const [testimonials, setTestimonials] = useState([]);
+
+   useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/api/testimonials');
+        // Get the latest 3 testimonials
+        setTestimonials(res.data.slice(0, 3));
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchTestimonials();
+  }, []);
   return (
     <>
       <div className="home-section1">
@@ -189,76 +204,29 @@ function HomepageContent() {
           ))}
         </div>
         <div className='home-headlinee'>
-          <div> <h3><span>Testim</span>onials</h3></div>
-          <div className='home-view-all'><a href="">View All</a></div>
+        <div> <h3><span>Testim</span>onials</h3></div>
+        <div className='home-view-all'><a href="/testimonials">View All</a></div>
+      </div>
 
-        </div>
-        <div className="home-container">
-
-          <div className="home-testheader">
+      <div className="home-container">
+        {testimonials.map((t, index) => (
+          <div className="home-testheader" key={index}>
             <div className="home-testheader-left">
               <div className="home-df">
                 <div className="home-testheader-img">
-                  <img src="../public/images/inverted.png" alt="" />
+                  <img src="/images/inverted.png" alt="Inverted" />
                 </div>
                 <div className='home-testheader-text'>
-                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
-
+                  <img src="/images/Group.png" alt="" className="home-circle big" />
                 </div>
-
               </div>
             </div>
             <div className="home-paragraph">
-              <p>
-                I have invested considerable time researching various online platforms, its course offerings,
-                learning programs, instructor quality, pricing structures, refund policies, as well as analyzing
-                user feedback.
-              </p>
+              <p>{t.feedback}</p>
             </div>
           </div>
-          <div className="home-testheader">
-            <div className="home-testheader-left">
-              <div className="home-df">
-                <div className="home-testheader-img">
-                  <img src="../public/images/inverted.png" alt="" />
-                </div>
-                <div className='home-testheader-text'>
-                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
-
-                </div>
-
-              </div>
-            </div>
-            <div className="home-paragraph">
-              <p>
-                I have invested considerable time researching various online platforms, its course offerings,
-                learning programs, instructor quality, pricing structures, refund policies, as well as analyzing
-                user feedback.
-              </p>
-            </div>
-          </div>
-          <div className="home-testheader">
-            <div className="home-testheader-left">
-              <div className="home-df">
-                <div className="home-testheader-img">
-                  <img src="../public/images/inverted.png" alt="" />
-                </div>
-                <div className='home-testheader-text'>
-                  <img src="../public/images/Group.png" alt="" className="home-circle big" />
-
-                </div>
-
-              </div>
-            </div>
-            <div className="home-paragraph">
-              <p>
-                I have invested considerable time researching various online platforms, its course offerings,
-                learning programs, instructor quality, pricing structures, refund policies, as well as analyzing
-                user feedback.
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
+      </div>
 
 
         <div className="home-promoters-row">

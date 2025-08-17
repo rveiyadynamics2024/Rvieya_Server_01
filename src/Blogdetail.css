@@ -30,10 +30,10 @@ body {
 
 .bgdetail-desc {
     width: 1000px;
-    height: 90px;
     color: white;
     line-height: 30px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .bgdetail-back-img {
@@ -86,9 +86,10 @@ body {
 }
 
 .bgdetail-intro-desc {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 25px;
+    margin-bottom: 20px;
 }
 
 .bgdetail-learn,
@@ -101,14 +102,35 @@ body {
     padding: 10px 0;
 }
 
-.bgdetail-learn-list ul {
+
+.bgdetail-learn ul,
+.bgdetail-speakers ul,
+.bgdetail-Event-detail ul,
+.bgdetail-attend ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.bgdetail-learn li,
+.bgdetail-speakers li,
+.bgdetail-Event-detail li,
+.bgdetail-attend li {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.bgdetail-learn ul {
     list-style-type: disc;
     padding-left: 20px;
     font-size: 18px;
     color: #333;
 }
 
-.bgdetail-learn-list li {
+.bgdetail-learn li {
     font-size: 20px;
     font-weight: 400;
 }
