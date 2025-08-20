@@ -25,7 +25,7 @@
 
         }
 
-        .padding {}
+        
 
         .inputs {
             display: flex;
@@ -43,6 +43,13 @@
             padding: 10px 15px;
             border: 1px solid rgba(156, 156, 156, 1);
             border-radius: 9px;
+        }
+
+        .inputss input {
+            width: 99%;
+            padding: 10px 15px;
+            border: 1px solid rgba(156, 156, 156, 1);
+
         }
 
         #category,
@@ -67,8 +74,8 @@
 
         .desc textarea {
             width: 100%;
-            padding: 25px 10px;
-            border-radius: 9px;
+            height: 120px;
+            padding: 10px;
             border: 1px solid rgba(156, 156, 156, 1);
 
         }
@@ -90,9 +97,10 @@
         input[type="file"] {
             display: none;
         }
-   .inputs{
-    padding-bottom: 15px;
-   }
+
+        .inputs {
+            padding-bottom: 15px;
+        }
 
         .buttons {
             display: flex;
@@ -107,10 +115,11 @@
             padding: 15px 30px;
 
         }
+
         .add-course p {
             font-size: 20px;
             font-weight: 600;
-        color: rgba(0, 49, 123, 1);
+            color: rgba(0, 49, 123, 1);
 
         }
 
@@ -122,23 +131,100 @@
             font-size: 16px;
             font-weight: 600;
             padding-bottom: 10px;
-   
+
         }
-       .image{
-        padding-top: 10px;
-       }
-       .cancel button{
-     color: rgba(95, 95, 95, 1);
 
-       
-       }
-       .save button{
-    border: none;
-    color: white;
-        background-color: rgba(0, 49, 123, 1);
+        .image {
+            padding-top: 10px;
+        }
 
-       }
-       
+        .cancel button {
+            color: rgba(95, 95, 95, 1);
+
+
+        }
+
+        .save button {
+            border: none;
+            color: white;
+            background-color: rgba(0, 49, 123, 1);
+
+        }
+
+        .heading-content {
+            padding: 20px 0px;
+            font-weight: 600;
+            font-size: 20px;
+            color: rgba(0, 49, 123, 1);
+
+
+        }
+
+        .heading-content span {
+            border-bottom: 4px solid rgba(0, 49, 123, 1);
+            padding-bottom: 10px;
+        }
+
+        .setting-add-button {
+            background-color: #00317B;
+            padding: 7px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            outline: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+
+        .web-df {
+            display: flex;
+            gap: 10px;
+            border: 1px solid rgba(58, 137, 255, 1);
+            padding: 10px;
+            margin-top: 10px;
+            align-items: center;
+            background-color: #CEE2FF;
+        }
+
+        .speaker-detail {
+            display: grid;
+
+            padding: 10px;
+
+            grid-template-columns: repeat(3, 1fr);
+
+
+
+
+        }
+
+        .speaker-detail input {
+            width: 90%;
+            padding: 10px;
+        }
+
+        .border-detail {
+
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .details select {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .mode-select {
+  position: relative;
+  width: 90%;
+}
+
     </style>
 </head>
 
@@ -148,57 +234,23 @@
 
         <div class="padding">
             <div class="add-course">
-                <p>Add Course</p>
+                <p>Add Blog</p>
             </div>
             <div class="hedd">
 
-                <div class="inputs">
+                <div class="inputss ">
                     <div class="title">
                         <div class="p">
                             <p>Title</p>
                         </div>
                         <div><input type="text" placeholder="Enter Title"></div>
                     </div>
-                    <div class="title">
-                        <div class="p">
-                            <p>Category</p>
-                        </div>
-                        <div class="select">
-
-                            <select id="category" name="category">
-
-                                <option value="fullstack">Full Stack Development</option>
-                                <option value="datascience">Data Science</option>
-                                <option value="uiux">UI/UX Design</option>
-                                <option value="cybersecurity">Cybersecurity</option>
-                                <option value="cloud">Cloud Computing</option>
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="title">
-                        <div class="p">
-                            <p>Type of Enrollment</p>
-                        </div>
-                        <div class="select">
-                            <select id="enrolment" name="enrolment">
 
 
-                                <option value="online">Online</option>
-                                <option value="offline">Offline</option>
-                                <option value="hybrid">Hybrid (Online + Offline)</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <div class="p">
-                            <p>Price</p>
-                        </div>
-                        <div><input type="text" placeholder="Enter Title"></div>
-                    </div>
+
+
                 </div>
-                <div class="desc">
+                <div class="desc" style="padding-top: 10px;">
                     <div class="p">
                         <p>Description</p>
                     </div>
@@ -214,16 +266,101 @@
                         <div> <input type="file" id="fileUpload" accept="image/*" /></div>
                     </div>
                 </div>
-
-
-                <div class="buttons">
-                    <div class="cancel"><button>Cancel</button></div>
-                    <div class="save"><button>SAVE</button></div>
+                <div class="heading-content">
+                    <p> <span>Conten</span>t</p>
                 </div>
+                <div class="inputss">
+                    <div class="title">
+                        <div class="p">
+                            <p>Title</p>
+                        </div>
+                        <div><input type="text" placeholder="Enter Title"></div>
+                    </div>
+                    <div class="desc" style="padding-top: 20px;">
+                        <div class="p">
+                            <p>Description</p>
+                        </div>
+                        <div><textarea name="" id="" placeholder="Enter The Description"></textarea></div>
+                    </div>
+                </div>
+                <button class="setting-add-button">
+                    <img src="../public/images/addsign.png" alt="" />
+                    <span>Add</span>
+                </button>
+                <div class="web-title">
+                    <div class="web-df">
+                        <div><img src="../public/images/forwardArrow.png" alt=""></div>
+                        <div>
+                            <p>Heading-Blog Webinar on python Fullsatck Development</p>
+                        </div>
+                    </div>
+                    <div class="web-df">
+                        <div><img src="../public/images/forwardArrow.png" alt=""></div>
+                        <div>
+                            <p>Heading-Blog Webinar on python Fullsatck Development</p>
+                        </div>
+                    </div>
 
+                    <div class="border-detail">
+                        <div class="heading-content">
+                            <p> <span>Speaker Details</span></p>
+                        </div>
+                        <div class="speaker-detail">
+
+                            <div class="details">
+                                <div class="p">
+                                    <p>Name</p>
+                                </div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div class="details">
+                                <div class="p">
+                                    <p>Role</p>
+                                </div>
+                                <div><input type="text"></div>
+
+                            </div>
+                            <div class="details">
+                                <div class="p">
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div><input type="text"></div>
+                            </div>
+                        </div>
+                        <div class="heading-content">
+                            <p> <span>Event Details</span></p>
+                        </div>
+                        <div class="speaker-detail">
+                            <div class="details">
+                                <div class="p">
+                                    <p>Date</p>
+                                </div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div class="details">
+                                <div class="p">
+                                    <p>Time</p>
+                                </div>
+                                <div><input type="time"></div>
+                            </div>
+                            <div class="details">
+                                <div class="p">
+                                    <p>Mode</p>
+                                </div>
+                                <div class="mode-select">
+                                    <select name="mode" id="mode">
+                                        <option value="">Select</option>
+                                        <option value="online">Online</option>
+                                        <option value="offline">Offline</option>
+                                        <option value="hybrid">Hybrid</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 </body>
 
 </html>

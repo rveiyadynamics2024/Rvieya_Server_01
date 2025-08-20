@@ -63,7 +63,7 @@ const PaymentOptions = () => {
 
         {/* Pay Button */}
         <button id="payBtn" onClick={() => setShowSuccess(true)}>
-          Pay | ₹6090.83
+          Pay Now
         </button>
       </main>
 

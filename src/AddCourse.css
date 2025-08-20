@@ -125,6 +125,7 @@
 input[type="file"] {
   display: none;
 }
+
 #settcour-category,
 #settcour-enrolment {
   width: 100%;
@@ -142,4 +143,184 @@ background: white url("../images/droparrow.png") no-repeat;
   background-position: right 15px center; /* ✅ arrow moved 10px inside */
   background-size: 10px;
   padding-right: 35px; /* prevent text overlap */
+}
+.settcour-container {
+  border: 1px solid rgba(58, 137, 255, 1);
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.settcour-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.settcour-title {
+  flex: 0 0 49%;
+}
+
+.settcour-inputs input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid rgba(156, 156, 156, 1);
+  border-radius: 9px;
+}
+
+.settcour-inputss input {
+  width: 99%;
+  padding: 10px 15px;
+  border: 1px solid rgba(156, 156, 156, 1);
+}
+
+#category,
+#enrolment {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid rgba(156, 156, 156, 1);
+  border-radius: 9px;
+}
+
+.settcour-desc,
+.settcour-image,
+.settcour-buttons {
+  width: 100%;
+  padding: 0px 15px 0px 0px;
+}
+
+.settcour-buttons {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+.settcour-buttons button {
+  padding: 10px 20px;
+}
+
+.settcour-desc textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid rgba(156, 156, 156, 1);
+}
+
+.settcour-upload-box {
+  background-color: #edf0ff;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #d0d7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.settcour-add-course {
+  border-bottom: 1px solid rgba(58, 137, 255, 1);
+  width: 100%;
+  padding: 15px 30px;
+}
+
+.settcour-add-course p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 49, 123, 1);
+}
+
+.settcour-hedd {
+  padding: 30px;
+}
+
+.settcour-p {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.settcour-image {
+  padding-top: 10px;
+}
+
+.settcour-cancel button {
+  color: rgba(95, 95, 95, 1);
+}
+
+.settcour-save button {
+  border: none;
+  color: white;
+  background-color: rgba(0, 49, 123, 1);
+}
+
+.settcour-heading-content {
+  padding: 20px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 49, 123, 1);
+}
+
+.settcour-heading-content span {
+  border-bottom: 4px solid rgba(0, 49, 123, 1);
+  padding-bottom: 10px;
+}
+
+.settcour-setting-add-button {
+  background-color: #00317B;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.settcour-web-df {
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(58, 137, 255, 1);
+  padding: 10px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: #CEE2FF;
+}
+
+.settcour-speaker-detail {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.settcour-speaker-detail input {
+  width: 90%;
+  padding: 10px;
+}
+
+.settcour-border-detail {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.settcour-details select {
+  width: 90%;
+  padding: 8px;
+  
+ 
+  font-size: 14px;
+}
+
+.settcour-mode-select {
+  position: relative;
+  width: 100%;
 }

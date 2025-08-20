@@ -28,7 +28,8 @@ const SuccessPopup = ({ onClose }) => {
 
                     </div>
                    <div className="go-home">
-  <Link to="/">Go Home</Link>
+  <Link to="/"><button className="success-home-btn" onClick={onClose}
+  >Go Home</button></Link>
 </div>
                 </div>
 

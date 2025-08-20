@@ -27,7 +27,7 @@ function TraineeDetails() {
                     JavaScript and Python, along with frameworks like React. With a strong
                     grasp of web development, application design, and agile methodologies,
                     they bring both technical expertise and practical knowledge to their
-                    training sessions. <a href="">Read more...</a>
+                    training sessions. <a href="" className="read-desc">Read more...</a>
                 </p>
             </div>
             {/* END OF TRAINEE DETAILS */}

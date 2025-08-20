@@ -175,6 +175,7 @@
   color: #00317b;
   font-weight: 500;
   cursor: pointer;
+  padding-right: 10px;
 }
 
 .register-form-grid {
@@ -292,4 +293,22 @@ display: flex;
 }
 .register-df img{
  width: 8px;
+}
+#category,
+#course {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid rgba(156, 156, 156, 1);
+  border-radius: 9px;
+
+  /* Hide default arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Custom arrow */
+background: white url("../images/droparrow.png") no-repeat;
+  background-position: right 15px center; /* ✅ arrow moved 10px inside */
+  background-size: 10px;
+  padding-right: 35px; /* prevent text overlap */
 }

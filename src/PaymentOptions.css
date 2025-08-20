@@ -79,9 +79,10 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   gap: 0.52vw; /* 10px */
-  
+  text-align: start;
    justify-content: center;
 }
+
 
 .pay-df {
   display: flex;
@@ -114,24 +115,26 @@ input[type="radio"] {
 ;
 }
 .pay-details {
-  padding: 0.52vw; /* 10px */
+  padding: 0.72vw; /* 10px */
   display: flex;
-  align-items: center;
+
   
   flex-direction: column;
   gap: 0.52vw; /* 10px */
 }
 
 .pay-details input {
-  padding: 0.42vw; /* 8px */
+  padding: 0.82vw; /* 8px */
   border-radius: 0.26vw; /* 5px */
   border: 0.05vw solid #ccc; /* 1px */
   width: 100%;
   font-size: 0.73vw; /* 14px */
 }
-
+.pay-details ::placeholder{
+  font-size: 15px;
+}
 .pay-details small {
-  font-size: 0.63vw; /* 12px */
+  font-size: 0.83vw; /* 12px */
   color: #777;
 }
 .upi p{

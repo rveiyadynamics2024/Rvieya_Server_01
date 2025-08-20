@@ -82,6 +82,7 @@ function AddInternship({ onSave, onCancel }) {
               <button type="submit" onClick={handleSave}>SAVE</button>
             </div>
           </div>
+          
         </div>
       </div>
       

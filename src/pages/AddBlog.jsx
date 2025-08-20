@@ -86,7 +86,7 @@ export const renderList = () => (
             <span>Edit</span>
           </button>
           <button className="setting-action-btn">
-            <img src="/images/del.png" alt="delete" />
+            <img src="/images/finaldel.png" alt="delete" />
             <span>Delete</span>
           </button>
         </div>

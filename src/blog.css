@@ -1,75 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
 .blog-container {
     width: 100%;
 }
 
 .blog-back-img {
     width: 100%;
-    height: 400px;
+    height: 20.83vw; /* 400px/1920 */
     background-image: url('../images/blog.png');
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .blog-back-img p {
     color: white;
-    font-size: 100px;
+    font-size: 5.21vw; /* 100px/1920 */
     font-weight: 700;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0.05vw 0.05vw 0.26vw rgba(0, 0, 0, 0.6);
 }
 
 .blog-padding {
-    padding: 40px 103px;
+    padding: 2.08vw 5.36vw; /* 40px/1920 , 103px/1920 */
 }
 
 .blog-card-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.04vw; /* 20px/1920 */
 }
 
 .blog-cards {
     display: flex;
     justify-content: space-between;
-    border: 2px solid rgba(127, 174, 244, 1);
-    padding: 50px;
-    border-radius: 22px;
-    gap: 30px;
+    border: 0.10vw solid rgba(127, 174, 244, 1); /* 2px/1920 */
+    padding: 2.60vw; /* 50px/1920 */
+    border-radius: 1.15vw; /* 22px/1920 */
+    gap: 1.56vw; /* 30px/1920 */
 }
 
 .blog-cards img {
-    width: 510px;
-    height: 300px;
-    border-radius: 10px;
+    width: 26.56vw; /* 510px/1920 */
+    height: 15.63vw; /* 300px/1920 */
+    border-radius: 0.52vw; /* 10px/1920 */
 }
 
 .blog-title {
     font-weight: 600;
-    font-size: 25px;
-    padding-bottom: 10px;
+    font-size: 1.30vw; /* 25px/1920 */
+    padding-bottom: 0.52vw; /* 10px/1920 */
 }
 
 .blog-description {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.04vw; /* 20px/1920 */
     color: rgba(0, 0, 0, 1);
-    line-height: 30px;
+    line-height: 1.56vw; /* 30px/1920 */
 }
 
 .blog-date {
     color: rgba(108, 108, 108, 1);
     font-weight: 600;
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 1.04vw; /* 20px/1920 */
+    padding-top: 0.52vw; /* 10px/1920 */
 }

@@ -15,7 +15,7 @@ function CourseCard({ course }) {
         <div className="course-card" onClick={handleCardClick} style={{ cursor: 'pointer' }}>
             {/* Image Section */}
             <div className="course-image-wrapper">
-                <img src={course.image} alt="Course" className="course-image" />
+                <img src={course.image} alt="Course" className="course-imagee" />
             </div>
 
             {/* Text Section */}
@@ -58,7 +58,9 @@ function CourseCard({ course }) {
                     <div className="course-action">
                         <button className="register-button">Register Now →</button>
                     </div>
+                    
                 </div>
+                <div className=' course-navigate'><a href=""> View Details</a></div>
             </div>
         </div>
     );

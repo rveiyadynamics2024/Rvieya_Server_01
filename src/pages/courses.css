@@ -222,7 +222,7 @@ span{
 .course-title {
   font-size: 1.1vw; /* ~18px */
   font-weight: 600;
-  margin-top: 10px;
+  
 }
 .number{
   color: black;
@@ -232,7 +232,7 @@ span{
   display: flex;
   align-items: center;
   font-size: 0.73vw; /* ~14px */
-padding-top: 10px;
+
   color: #ffa000;
   justify-content: space-between;
 }
@@ -335,7 +335,7 @@ padding-top: 10px;
   align-items: center;
   gap: 2.6vw; /* ~50px */
   flex-wrap: wrap;
-  padding-top: 10px;
+  
 }
 
 /* 📱 Responsive (mobile-first) tweaks */

@@ -91,12 +91,16 @@ img {
 
 /* Blog Card */
 .setting-blog-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 categories per row */
+  gap: 20px;
   padding: 21px;
   box-shadow: 0 0 8px 0 #0000003B;
   border-radius: 10px;
+}
+.dropdown-container{
+  display: flex;
+  gap: 10px;
 }
 
 /* Blog Card Sections */

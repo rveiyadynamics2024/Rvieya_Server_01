@@ -54,13 +54,14 @@
 .dig-one {
     line-height: 1.56vw;
     margin-left: 3.65vw;
-    margin-top: 1.04vw;
+  
 }
 
 .dig-two, .dig-three {
     list-style: disc;
     line-height: 1.56vw;
 }
+
 
 .dig-two {
     margin-left: 1.56vw;

@@ -398,7 +398,9 @@ padding: 0 40px 0 40px  ;
 .home-container {
   padding:20px 0px;
     display: flex;
-  gap: 60px;
+  gap: 50px;
+  flex-wrap: wrap;
+
 }
 .home-headline h3 {
   font-size: 30px;
@@ -442,6 +444,7 @@ height: 16px;
 .home-testheader-left {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home-paragraph {
@@ -460,3 +463,100 @@ height: 16px;
   width: 16px;
   height: 16px;
 }
+/* ----------- MEDIA QUERIES ----------- */
+
+/* Extra large (>= 1920px) - Desktop Full HD */
+@media (min-width: 1920px) {
+  body {
+    font-size: 1vw; /* scales with screen width */
+  }
+}
+
+/* Large desktop (1440px) */
+@media (max-width: 1440px) {
+  .home-sec-part1 h1 {
+    font-size: 2.8vw; /* ~40px on 1440px */
+  }
+  .home-sec-part1 p {
+    font-size: 1.4vw; /* ~20px */
+  }
+}
+
+/* Medium desktop (1280px) */
+@media (max-width: 1280px) {
+  .home-section1 {
+    padding: 0px 4vw 3vw 4vw;
+    gap: 2vw;
+  }
+  .home-sec-part1 h1 {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+}
+
+/* Tablet landscape (1024px) */
+@media (max-width: 1024px) {
+  .home-sec-part1 h1 {
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+  .home-sec-part1 p {
+    font-size: 1.8vw;
+  }
+  .home-btn button {
+    width: 18vw;
+    height: 4vw;
+    font-size: 1.2vw;
+  }
+}
+
+/* Tablet portrait (768px) */
+@media (max-width: 768px) {
+  .home-section1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 8vw 5vw;
+  }
+  .home-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-sec-part1 h1 {
+    font-size: 5vw;
+  }
+  .home-sec-part1 p {
+    font-size: 2.5vw;
+  }
+}
+
+/* Mobile large (480px) */
+@media (max-width: 480px) {
+  .home-sec-part1 h1 {
+    font-size: 6vw;
+  }
+  .home-sec-part1 p {
+    font-size: 3vw;
+  }
+  .home-btn button {
+    width: 70vw;
+    height: 12vw;
+    font-size: 4vw;
+  }
+}
+
+/* Mobile small (360px) */
+@media (max-width: 360px) {
+  .home-sec-part1 h1 {
+    font-size: 7vw;
+  }
+  .home-sec-part1 p {
+    font-size: 3.5vw;
+  }
+  .home-btn button {
+    width: 80vw;
+    height: 14vw;
+    font-size: 4.2vw;
+  }
+}
+/* === RESPONSIVE TESTIMONIALS & FOOTER === */
+

@@ -4,9 +4,11 @@ import AddCourse from "./AddCourse";
 import AddInternship from "./AddInternship";
 import AddBlog from "./AddBlog";
 
+
 function SettingPage() {
   const [activeTab, setActiveTab] = useState("blog");
   const [showAddForm, setShowAddForm] = useState(false);
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleSaveForm = () => {
     setShowAddForm(false);
@@ -16,164 +18,196 @@ function SettingPage() {
     setShowAddForm(false);
   };
 
-const renderList = () => {
-  if (activeTab === "internship") {
-    return (
-      <div className="setting-blog-list">
-      {[1, 2, 3, 4].map((_, index) => (
-        <div className="setting-blog-card" key={index}>
-          <div className="setting-blog-title">
-            <img src="/images/plus.png" alt="" />
-            <div>
-              <p className="ash">Title</p>
-              <p>Join Our Exclusive Online Course Webinar!</p>
-            </div>
-          </div>
-          <div className="setting-blog-image">
-            <p className="ash">Image</p>
-            <p className="imgg">image.png</p>
-          </div>
-          <div className="setting-blog-category">
-            <p className="ash">Category</p>
-            <p> FullStack Development</p>
-          </div>
-           <div className="setting-blog-category">
-            <p className="ash">Place</p>
-            <p> Banglore</p>
-          </div> <div className="setting-blog-category">
-            <p className="ash">Duration</p>
-            <p>6 months</p>
-          </div>
-           <div className="setting-blog-category-price">
-            <p className="ash">price</p>
-            <p> 6000</p>
-          </div>
-          <div className="setting-blog-modified">
-            <p className="ash">Modified</p>
-            <p>By John Doe | 02/08/2025 | 03:45 PM</p>
-          </div>
-          <div className="setting-blog-actions">
-            <button className="setting-action-btn">
-              <img src="/images/edit.png" alt="" />
-              <span>Edit</span>
-            </button>
-            <button className="setting-action-btn">
-              <img src="/images/del.png" alt="" />
-              <span>Delete</span>
-            </button>
-          </div>
-        </div>
-      ))}
-    </div>
-    );
-  }
+  const renderList = () => {
+    if (activeTab === "internship") {
+      return (
+        <div className="setting-blog-list">
+          {[1, 2, 3, 4].map((_, index) => (
+            <div className="setting-blog-card" key={index}>
+              <div className="setting-blog-title">
+                <img src="/images/forwardArrow.png" alt="" />
+                <div>
+                  <p className="ash">Title</p>
+                  <p>Join Our Exclusive Online Course Webinar!</p>
+                </div>
+              </div>
+              <div className="setting-blog-image">
+                <p className="ash">Image</p>
+                <p className="imgg">image.png</p>
+              </div>
+              <div className="setting-blog-category">
+                <p className="ash">Category</p>
+                <p> FullStack Development</p>
+              </div>
+              <div className="setting-blog-category-place">
+                <p className="ash">Place</p>
+                <p> Banglore</p>
+              </div>
 
-  if (activeTab === "courses") {
-    return (
-     <div className="setting-blog-list">
-      {[1, 2, 3, 4].map((_, index) => (
-        <div className="setting-blog-card" key={index}>
-          <div className="setting-blog-title">
-            <img src="/images/plus.png" alt="" />
-            <div>
-              <p className="ash">Title</p>
-              <p>Join Our Exclusive Online Course Webinar!</p>
+              <div className="setting-blog-modified-internship">
+                <p className="ash">Modified</p>
+                <p>By John Doe | 02/08/2025 | 03:45 PM</p>
+              </div>
+              <div className="setting-blog-actions2">
+                <button className="setting-action-btn">
+                  <img src="/images/edit.png" alt="" />
+                  <span>Edit</span>
+                </button>
+                <button className="setting-action-btn">
+                  <img src="/images/finaldel.png" alt="" />
+                  <span>Delete</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="setting-blog-image">
-            <p className="ash">Image</p>
-            <p className="imgg">image.png</p>
-          </div>
-          <div className="setting-blog-category">
-            <p className="ash">Category</p>
-            <p> FullStack Development</p>
-          </div>
-          <div className="setting-blog-category-price">
-            <p className="ash">Price</p>
-            <p> 6000</p>
-          </div>
-          <div className="setting-blog-category-trainer">
-            <p className="ash">Experience</p>
-            <p> 6yr</p>
-          </div>
-          <div className="setting-blog-category-typp">
-            <p className="ash">Type</p>
-            <p> Course</p>
-          </div>
-          <div className="setting-blog-category-trainer">
-            <p className="ash">trainer Name</p>
-            <p> xyz</p>
-          </div>
-           <div className="setting-blog-category-trainer">
-            <p className="ash">Assitance</p>
-            <p>With placment</p>
-          </div>
-            <div className="setting-blog-category-trainer">
-            <p className="ash">About Trainer</p>
-            <p>12 year of ....</p>
-          </div>
-          <div className="setting-blog-modified">
-            <p className="ash">Modified</p>
-            <p>By John Doe | 02/08/2025 | 03:45 PM</p>
-          </div>
-          <div className="setting-blog-actions">
-            <button className="setting-action-btn">
-              <img src="/images/edit.png" alt="" />
-              <span>Edit</span>
-            </button>
-            <button className="setting-action-btn">
-              <img src="/images/del.png" alt="" />
-              <span>Delete</span>
-            </button>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-    );
-  }
+      );
+    }
 
-  if (activeTab === "blog") {
-    return (
-    <div className="setting-blog-list">
-      {[1, 2, 3, 4].map((_, index) => (
-        <div className="setting-blog-card" key={index}>
-          <div className="setting-blog-title">
-            <img src="/images/plus.png" alt="" />
-            <div>
-              <p className="ash">Title</p>
-              <p>Join Our Exclusive Online Course Webinar!</p>
+    if (activeTab === "courses") {
+      return (
+        <div className="setting-blog-list">
+          {[1, 2, 3, 4].map((_, index) => (
+            <div className="setting-main" key={index}>
+              <div className="setting-blog-card-course">
+
+                <div
+                  className="setting-blog-title"
+                  onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                >
+                  <img
+                    className={`arrow-icon ${expandedIndex === index ? "rotated" : ""}`}
+                    src="/images/forwardArrow.png"
+                    alt=""
+                  />
+                  <div className="setting-blog-title-text">
+                    <p className="ash">Title</p>
+                    <p>Join Our Exclusive Online Course Webinar!</p>
+                  </div>
+                </div>
+
+                <div className="setting-blog-image">
+                  <p className="ash">Image</p>
+                  <p className="imgg">image.png</p>
+                </div>
+
+                <div className="setting-blog-category">
+                  <p className="ash">Category</p>
+                  <p>FullStack Development</p>
+                </div>
+
+                <div className="setting-blog-modified-course">
+                  <p className="ash">Modified</p>
+                  <p>By John Doe | 02/08/2025 | 03:45 PM</p>
+                </div>
+
+                <div className="setting-blog-actions1">
+                  <button className="setting-action-btn1">
+                    <img src="/images/edit.png" alt="" />
+                    <span>Edit</span>
+                  </button>
+                  <button className="setting-action-btn1">
+                    <img src="/images/finaldel.png" alt="" />
+                    <span>Delete</span>
+                  </button>
+                </div>
+
+                {/* Dropdown section */}
+
+              </div>
+              {expandedIndex === index && (
+                <div className="dropdown-container">
+                  <div className="dropdown-item-parent">
+                    <div className="dropdown-item">
+                      <p className="ash">Category</p>
+                      <p>Fullstack Development</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">Price</p>
+                      <p>6000</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">Duration</p>
+                      <p>6 months</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">Trainer</p>
+                      <p>Fullstack Development</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">experience</p>
+                      <p>6 yrs</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">Trainer Name</p>
+                      <p>xyz</p>
+                    </div>
+                    <div className="dropdown-item">
+                      <p className="ash">Without Placement</p>
+                      <p>6000</p>
+                    </div>
+
+                  </div>
+
+                  <div className="dropdown-item-desc">
+                    <p className="ash">Description</p>
+                    <p>
+                      Boost Your Career with Our Exclusive Webinar Register Now! Don’t miss
+                      our upcoming free webinar on Career Guidance & Full Stacks Web
+                      Development.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
-          <div className="setting-blog-image">
-            <p className="ash">Image</p>
-            <p className="imgg">image.png</p>
-          </div>
-          <div className="setting-blog-category-cat">
-            <p className="ash">Category</p>
-            <p> FullStack Development</p>
-          </div>
-          <div className="setting-blog-modified">
-            <p className="ash">Modified</p>
-            <p>By John Doe | 02/08/2025 | 03:45 PM</p>
-          </div>
-          <div className="setting-blog-actions">
-            <button className="setting-action-btn">
-              <img src="/images/edit.png" alt="" />
-              <span>Edit</span>
-            </button>
-            <button className="setting-action-btn">
-              <img src="/images/del.png" alt="" />
-              <span>Delete</span>
-            </button>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-    );
-  }
+      );
+    }
 
-  return null;
-};
+    if (activeTab === "blog") {
+      return (
+        <div className="setting-blog-list">
+          {[1, 2, 3, 4].map((_, index) => (
+            <div className="setting-blog-card" key={index}>
+              <div className="setting-blog-title">
+                <img src="/images/forwardArrow.png" alt="" />
+                <div className="setting-blog-title-text">
+                  <p className="ash">Title</p>
+                  <p>Join Our Exclusive Online Course Webinar!</p>
+                </div>
+              </div>
+              <div className="setting-blog-image">
+                <p className="ash">Image</p>
+                <p className="imgg">image.png</p>
+              </div>
+              <div className="setting-blog-category-cat">
+                <p className="ash">Category</p>
+                <p> FullStack Development</p>
+              </div>
+              <div className="setting-blog-modified">
+                <p className="ash">Modified</p>
+                <p>By John Doe | 02/08/2025 | 03:45 PM</p>
+              </div>
+              <div className="setting-blog-actions">
+                <button className="setting-action-btn">
+                  <img src="/images/edit.png" alt="" />
+                  <span>Edit</span>
+                </button>
+                <button className="setting-action-btn">
+                  <img src="/images/finaldel.png" alt="delete" className="delete-icon" />
+                  <span>Delete</span>
+                </button>
+
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    return null;
+  };
 
 
   const renderForm = () => {

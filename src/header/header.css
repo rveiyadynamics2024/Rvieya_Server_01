@@ -186,7 +186,7 @@ border-bottom:0.16vw solid white;
   position: absolute;
   top: 100%;
   left: 0;
-
+width: 200px;
   background-color: white;         /* ✅ Dropdown background is white */
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -211,8 +211,6 @@ border-bottom:0.16vw solid white;
   height: auto;
  /* adjust if needed */
 }
-
-
 
 
 
