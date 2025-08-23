@@ -252,12 +252,14 @@ input[type="file"] {
 
 .settcour-cancel button {
   color: rgba(95, 95, 95, 1);
+  font-size: 12PX;
 }
 
 .settcour-save button {
   border: none;
   color: white;
   background-color: rgba(0, 49, 123, 1);
+  font-size: 12px;
 }
 
 .settcour-heading-content {
@@ -315,8 +317,6 @@ input[type="file"] {
 .settcour-details select {
   width: 90%;
   padding: 8px;
-  
- 
   font-size: 14px;
 }
 

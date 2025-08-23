@@ -9,11 +9,11 @@ import Footer from './footer/footer';
 import Home from './pages/home';
 import Register from "./pages/register"; 
 import Courses from './pages/courses';
-import Internships from './pages/Internships';
+import Internships from './pages/internships';
 import Blog from './pages/Blog';
 import Testimonials from './pages/Testimonials';
 import LMSLogin from './pages/Settingpage';
-import Services from './pages/Services'; // ✅ New single dynamic service page
+import Services from './pages/services'; // ✅ New single dynamic service page
 import PaymentOptions from './pages/PaymentOptions';
 import CourseView1 from './courseView1';
 import CourseView2 from './courseView2';
@@ -61,8 +61,7 @@ function App() {
             <Route path="/courseview2/:id" element={<CourseView2 />} />
             <Route path="/settings" element={<SettingPage />} />
             <Route path="/feedback" element={<FeedbackPage />} />
-            <Route path="/" element={<Home />} />
-
+            
 
 
           </Routes>
