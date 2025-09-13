@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+.image-container {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/blog.png');
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;  /* horizontally center */
+    align-items: center;
+}
+.description-text {
+    font-size: 40px; 
+    font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+padding-bottom: 10px;
+    text-align: center; /* bold text */
+   
+}
+.desc{
+    
+    width: 1000px;
+    height: 90px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 30px;
+    
+    
+}
+.back-img{
+    text-align: center;
+    justify-content: center;
+}
+.reg-btn{
+    padding-top: 10px;
+}
+.reg-btn button{
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding:10px 15px ;
+   background: rgba(24, 24, 24, 1);
+ cursor: pointer;
+    border: 1px solid white;
+}
+.image{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding:  20px 0;
+}
+.image img{
+ width: 864px;
+ height: 600px;
+
+}
+.intro-text p{
+ color: rgba(24, 24, 24, 1);
+ font-weight: 700;
+ font-size: 20px;
+}
+ .learn-list ul {
+    list-style-type: disc;  /* default bullet type */
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.intro-desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.learn{
+   
+} 
+.learn, .speakers, .Event-detail ,.attend{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(0, 49, 123, 1);
+   padding:  10px 0 10px 0;
+
+
+}
+.learn-list li {
+    font-size: 20px;
+    font-weight: 400;
+}
+.company-name {
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(0, 49, 123, 1);
+    padding:  10px 0 10px 0;
+}
+.intro{
+    padding:15px   90px ;
+}
+
+
+.register{
+    padding: 20px 0;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.reg-btns{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+
+}
+.reg-btns button{
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding:10px 35px ;
+   background:  rgba(0, 49, 123, 1);
+ cursor: pointer;
+    border: 1px solid white;
+}
+.learn-text {
+  padding-bottom: 10px
+    
+}
